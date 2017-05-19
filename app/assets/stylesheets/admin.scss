@@ -320,6 +320,11 @@ a.delete {
   }
 }
 
+[class^="icon-"].delete {
+  border: 0;
+  font-size: $base-font-size;
+}
+
 .verified {
   color: $check;
 
