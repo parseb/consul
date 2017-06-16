@@ -47,8 +47,7 @@ class User < ActiveRecord::Base
   validates :official_level, inclusion: {in: 0..5}
   validates :terms_of_service, acceptance: { allow_nil: false }, on: :create
 
-  validates :locale, inclusion: {in: I18n.available_locales.map(&:to_s),
-                                 allow_nil: true}
+  validates :locale, inclusion: {allow_nil: true, in: I18n.available_locales.map(&:to_s)}
 
   validates_associated :organization, message: false
 
