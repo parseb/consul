@@ -1,6 +1,5 @@
 GEM
-  remote: http://rubygems.org/
-  remote: https://galetahub/ckeditor/
+  remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
     actionmailer (4.2.8)
@@ -505,7 +504,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.2.3)
   capistrano3-delayed-job (~> 1.7.3)
   capybara (~> 2.14.0)
-  ckeditor!
+  ckeditor (= 4.2.3)
   cocoon
   coffee-rails (~> 4.2.1)
   coveralls (~> 0.8.21)
