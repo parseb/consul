@@ -21,6 +21,7 @@ Rails.application.config.assets.precompile += %w( preselection-charts.js )
 Rails.application.config.assets.precompile += %w( stats-charts.js )
 Rails.application.config.assets.precompile += %w( progress_bar.js )
 Rails.application.config.assets.precompile += %w( participatory-budget-charts.js )
+Rails.application.config.assets.precompile += %w( ckeditor/* ckeditor/lang/* )
 
 # Loads app/assets/images/custom before app/assets/images
 images_path = Rails.application.config.assets.paths
