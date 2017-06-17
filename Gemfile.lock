@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: d0194ccd3f181be603f419c233ca7d4ce657b09a
+  specs:
+    ckeditor (4.2.3)
+      cocaine
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -99,9 +107,6 @@ GEM
     childprocess (0.6.1)
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
-    ckeditor (4.2.3)
-      cocaine
-      orm_adapter (~> 0.5.0)
     climate_control (0.1.0)
     cliver (0.3.2)
     cocaine (0.5.8)
@@ -504,7 +509,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.2.3)
   capistrano3-delayed-job (~> 1.7.3)
   capybara (~> 2.14.0)
-  ckeditor (~> 4.2.3)
+  ckeditor!
   cocoon
   coffee-rails (~> 4.2.1)
   coveralls (~> 0.8.21)
