@@ -44,6 +44,8 @@ nl:
         tags_instructions: "Label dit voorstel. U kunt uw eigen categorie kiezen of één van de bestaande."
         tags_label: Labels
         tags_placeholder: "Voeg de gewenste labels toe, gescheiden door een komma (',')"
+        faq: "Wat kunt u voorstellen?"
+        faq_link: "Kijk naar alle informatie op participatieve budgettering"
       index:
         title: Begrotingsvoorstellen
         unfeasible: Onhaalbare begrotingsvoorstellen

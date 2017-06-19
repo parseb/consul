@@ -61,13 +61,17 @@ nl:
       how_to_use:
         text: |-
           Gebruik het in uw gemeente en help ons het te verbeteren, het is gratis software.
-          
+
           Deze Open Overheid site gebruikt de [Consul web-app](https://github.com/ayuntamientomadrid 'consul github'). Gratis software, onder de [AGPLv3 Licentie](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ). Simpel gezegd betekend dit dat u de app kunt inspecteren, gebruiken, aanpassen en herdistribueren (onder voorwaarde dat anderen hetzelfde kunnen doen met uw versie).
-          
+
           Voor programmeurs: help ons het te verbeteren via [Consul app](https://github.com/ayuntamientomadrid 'consul github').
       titles:
         how_to_use: Gebruik het in uw gemeente
     privacy: Privacy Verklaring
+    processes:
+      back: Terug
+      index:
+        title: Participatieve processen
     titles:
       accessibility: Toegankelijkheid
       conditions: Gebruiksvoorwaarden
