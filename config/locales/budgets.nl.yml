@@ -106,3 +106,12 @@ nl:
       phase: Huidige fase
       unfeasible_title: Onhaalbare voorstellen
       unfeasible: Bekijk onhaalbare voorstellen
+    results:
+      heading: "Resultaten Burgerbegroting"
+      geozone_selection_title: "Strekking"
+      spending_proposal: titel
+      ballot_lines_count: stemmen
+      hide_discarded_link: Hide weggegooid
+      show_all_link: Toon alle
+      price: kosten
+      amount_available: beschikbare budget

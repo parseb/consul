@@ -42,7 +42,7 @@ nl:
         select_version_submit: see
         updated_at: updated at %{date}
         see_changes: see changes summary
-        see_comments: See all comments
+        see_comments: "Alle reacties bekijken"
         text_toc: Table of contents
         text_body: Text
         text_comments: Comments
