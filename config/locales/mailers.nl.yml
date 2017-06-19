@@ -1,4 +1,3 @@
----
 nl:
   mailers:
     no_reply: "This message was sent from an email address that does not accept replies."
@@ -23,7 +22,7 @@ nl:
       title: New response to your comment
     unfeasible_spending_proposal:
       hi: "Dear user,"
-      new_html: "For all these, we invite you to elaborate a <strong>new proposal</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}."
+      new_html: 'For all these, we invite you to elaborate a <strong>new proposal</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}.'
       new_href: "new investment project"
       reconsider_html: "If you believe that the rejected proposal meets the requirements to be an investment proposal, you can communicate this, within 48 hours, responding to the email address examples@consul.es. Including the code %{code} in the subject of the email."
       sincerely: "Sincerely"
@@ -33,14 +32,14 @@ nl:
       unfeasible_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your proposal <strong>'%{title}'</strong> will be excluded from this participatory process for the following reason:"
     budget_investment_unfeasible:
       hi: "Dear user,"
-      new_html: "For all these, we invite you to elaborate a <strong>new proposal</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}."
+      new_html: 'For all these, we invite you to elaborate a <strong>new investment</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}.'
       new_href: "new investment project"
-      reconsider_html: "If you believe that the rejected proposal meets the requirements to be an investment proposal, you can communicate this, within 48 hours, responding to the email address examples@consul.es. Including the code %{code} in the subject of the email."
+      reconsider_html: "If you believe that the rejected investment meets the requirements to be an investment project, you can communicate this, within 48 hours, responding to the email address examples@consul.es. Including the code %{code} in the subject of the email."
       sincerely: "Sincerely"
       signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
       sorry: "Sorry for the inconvenience and we again thank you for your invaluable participation."
       subject: "Your investment project '%{code}' has been marked as unfeasible"
-      unfeasible_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your proposal <strong>'%{title}'</strong> will be excluded from this participatory process for the following reason:"
+      unfeasible_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your investment <strong>'%{title}'</strong> will be excluded from this participatory process for the following reason:"
     proposal_notification_digest:
       info: "Here are the new notifications that have been published by authors of the proposals that you have supported in %{org_name}."
       title: "Proposal notifications in %{org_name}"
@@ -73,13 +72,21 @@ nl:
       sincerely: "Sincerely,"
       signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
       share: "Comparte tu proyecto"
-    budget_investment_unfeasible:
-      hi: "Dear user,"
-      new_html: "For all these, we invite you to elaborate a <strong>new investment</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}."
-      new_href: "new investment project"
-      reconsider_html: "If you believe that the rejected investment meets the requirements to be an investment project, you can communicate this, within 48 hours, responding to the email address examples@consul.es. Including the code %{code} in the subject of the email."
-      sincerely: "Sincerely"
-      signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
-      sorry: "Sorry for the inconvenience and we again thank you for your invaluable participation."
-      subject: "Your investment project '%{code}' has been marked as unfeasible"
-      unfeasible_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your investment <strong>'%{title}'</strong> will be excluded from this participatory process for the following reason:"
+    budget_investment_selected:
+      subject: "Uw budget voorstel '%{code}' is geselecteerd"
+      hi: "Beste deelnemer,"
+      selected_html: "Vanuit de gemeente willen we u bedanken voor uw deelname aan de <strong>begroting</strong>. Wij willen u informeren dat uw project <strong>'%{title}'</strong> is geselecteerd voor een definitieve stemronde die van <strong>15 mei tot 30 juni plaats zal vinden</strong>."
+      share: "Begin met het verwerven van stemmen; deel uw project op sociale netwerken, bijvoorbeeld. Delen en communicatie is essentieel om het verder te brengen."
+      share_button: "Deel uw project"
+      thanks: "Dank u nogmaals voor uw deelname."
+      sincerely: "Hoogachtend"
+      signatory: "Afdeling burgerparticipatie"
+    budget_investment_unselected:
+      subject: "Uw project '%{code}' is niet geselecteerd"
+      hi: "Beste deelnemer,"
+      unselected_html: "Vanuit de gemeente willen we u bedanken voor uw deelname aan de <strong>begroting</strong>. Wij willen u informeren dat uw project <strong>'%{title}'</strong> is geselecteerd voor een definitieve stemronde die van <strong>15 mei tot 30 juni plaats zal vinden</strong>."
+      participate_html: "U kunt deelnemen aan de laatste stemfase voor investeringsvoorstellen van <strong>15 mei tot 30 juni</strong>."
+      participate_url: "neem deel aan de laatste stemming"
+      thanks: "Dank u nogmaals voor uw deelname."
+      sincerely: "Hoogachtend"
+      signatory: "Afdeling burgerparticipatie"

@@ -55,6 +55,24 @@ nl:
       site_customization/content_block:
         one: Aangepaste inhoud
         other: Aangepaste inhoud
+      legislation/process:
+        one: "Proces"
+        other: "Processes"
+      legislation/draft_versions:
+        one: "Conceptversie"
+        other: "Draft versions"
+      legislation/draft_texts:
+        one: "Concept"
+        other: "Drafts"
+      legislation/questions:
+        one: "Vraag"
+        other: "Questions"
+      legislation/question_options:
+        one: "Vraag optie"
+        other: "Question options"
+      legislation/answers:
+        one: "Antwoord"
+        other: "Answers"
     attributes:
       budget:
         name: "Naam"
@@ -68,14 +86,12 @@ nl:
         phase: "Fase"
         currency_symbol: "Valuta"
       budget/investment:
-        heading_id: "Begrotingsectie"
+        heading_id: "Kop"
         title: "Titel"
         description: "Omschrijving"
-        external_url: "Externe url"
-        location: "Locatie"
-        administrator_id: "Administrator"
         external_url: "Link naar extra documentatie"
-        heading_id: "Kop"
+        location: "Locatie"
+        administrator_id: "Beheerder"
         organization_name: "Als u een voorstel doet uit naam van een collectief/organisatie, voer de naam in"
       comment:
         body: "Reactie"
@@ -92,7 +108,8 @@ nl:
         description: "Omschrijving"
         terms_of_service: "Gebruiksvoorwaarden"
       user:
-        email: "Email"
+        login: "Email of gebruikersnaam"
+        email: "E-mail"
         username: "Gebruikersnaam"
         password_confirmation: "Bevestiging wachtwoord"
         password: "Wachtwoord"
@@ -123,8 +140,8 @@ nl:
         description: "Omschrijving"
         external_url: "Link naar extra documentatie"
       signature_sheet:
-        signable_type: "Signable type"
-        signable_id: "Signable ID"
+        signable_type: "Ondertekenbaar type"
+        signable_id: "Ondertekende ID"
         document_numbers: "Documentnummers"
       site_customization/page:
         content: Inhoud
@@ -135,14 +152,39 @@ nl:
         title: Titel
         updated_at: Bijgewerkt op
         more_info_flag: Toon in extra informatie pagina
-        print_content_flag: Print inhoud 
+        print_content_flag: Print inhoud
       site_customization/image:
         name: Naam
         image: Beeld
       site_customization/content_block:
         name: Naam
         locale: locale
-        body: Body
+        body: Platte tekst
+      legislation/process:
+        title: Proces titel
+        description: Beschrijving
+        additional_info: Extra info
+        start_date: Begindatum
+        end_date: Einddatum
+        debate_start_date: De begindatum van het debat
+        debate_end_date: Debat einddatum
+        draft_publication_date: Publicatiedatum concept
+        allegations_start_date: Allegations start date
+        allegations_end_date: Allegations end date
+        result_publication_date: Datum van de bekendmaking van de uiteindelijke resultaat
+      legislation/draft_version:
+        title: Versie titel
+        body: Tekst
+        changelog: Wijzigingen
+        status: Status
+        final_version: Definitieve versie
+      legislation/question:
+        title: Titel
+        question_options: Opties
+      legislation/question_option:
+        value: Waarde
+      legislation/annotation:
+        text: Commentaar
     errors:
       models:
         user:
@@ -160,8 +202,16 @@ nl:
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Document not in census"
+              not_in_census: "Een document niet in de plaats"
               has_voted: "Deelnemer heeft al gestemd"
+        legislation/process:
+          attributes:
+            end_date:
+              invalid_date_range: moet op of na de begindatum liggen
+            debate_end_date:
+              invalid_date_range: moet op of na de begindatum van het debat zijn
+            allegations_end_date:
+              invalid_date_range: must be on or after the allegations start date
         proposal:
           attributes:
             tag_list:

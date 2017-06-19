@@ -1,7 +1,6 @@
----
 nl:
   pages:
-    census_terms: To confirm the account, you must be 16 or older and be registered, having provided the information requested previously, will verify. By accepting the verification process, you also consent to the verification of this information, as well as the contact methods featuring in said files. The data provided will be acquired and processed in a file mentioned previously in the terms and conditions of use for the Portal.
+    census_terms: Om het account te bevestigen moet u 16 jaar of ouder zijn, en zijn geregistreerd bij de gemeente. De eerder verstrekte informatie zal worden geverifiëerd. Door het aanvaarden van het dit proces, gaat u daarmee akkoord, en bevestigd u de contactgegevens in genoemde bestanden. De verstrekte gegevens gebruikt en verwerkt volgens de bepalingen en voorwaarden voor het gebruik van het portaal.
     conditions: Gebruiksvoorwaarden
     general_terms: Gebruiksvoorwaarden
     more_info:
@@ -51,25 +50,24 @@ nl:
         title: "Technische problemen?"
         description: "Lees de FAQs en kijk of dat helpt."
         button: "Bekijk de meest gestelde vragen"
+        page:
+          title: "Veel gestelde vragen"
+          description: "Gebruik deze pagina veelgestelde vragen van de gebruikers van de site te beantwoorden."
+          faq_1_title: "Vraag 1"
+          faq_1_description: "Dit is een voorbeeld voor de beschrijving van de eerste vraag."
       other:
         title: "Verdere informatie"
         how_to_use: "Gebruik %{org_name} in uw gemeente"
-        world: "Burgerparticipatie in de wereld"
-        facts: "Feiten over burgerparticipatie en directe democratie"
       how_to_use:
         text: |-
           Gebruik het in uw gemeente en help ons het te verbeteren, het is gratis software.
-
+          
           Deze Open Overheid site gebruikt de [Consul web-app](https://github.com/ayuntamientomadrid 'consul github'). Gratis software, onder de [AGPLv3 Licentie](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ). Simpel gezegd betekend dit dat u de app kunt inspecteren, gebruiken, aanpassen en herdistribueren (onder voorwaarde dat anderen hetzelfde kunnen doen met uw versie).
-
+          
           Voor programmeurs: help ons het te verbeteren via [Consul app](https://github.com/ayuntamientomadrid 'consul github').
       titles:
         how_to_use: Gebruik het in uw gemeente
     privacy: Privacy Verklaring
-    processes:
-      back: Terug
-      index:
-        title: Participatieve processen
     titles:
       accessibility: Toegankelijkheid
       conditions: Gebruiksvoorwaarden
@@ -77,7 +75,7 @@ nl:
       privacy: Privacy Verklaring
     verify:
       code: Code die u in een brief heeft ontvangen
-      email: Email
+      email: E-mail
       info: 'Vul uw toegangsgegevens in om uw account te verifieren:'
       info_code: 'en de code die u heeft ontvangen:'
       password: Wachtwoord
