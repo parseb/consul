@@ -11,7 +11,7 @@
 
     <div class="ckeditor small-12 column">
       <%= f.label :description, t("spending_proposals.form.description") %>
-      <%= f.cktext_area :description, maxlength: SpendingProposal.description_max_length, ckeditor: { language: I18n.locale }, label: false %>
+      <%= f.cktext_area :description, maxlength: SpendingProposal.description_max_length, ckeditor: { language: 'en' }, label: false %>
     </div>
 
     <div class="small-12 column">
