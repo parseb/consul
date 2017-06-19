@@ -66,6 +66,10 @@ nl:
       titles:
         how_to_use: Gebruik het in uw gemeente
     privacy: Privacy Verklaring
+    processes:
+      back: Terug
+      index:
+        title: Participatieve processen
     titles:
       accessibility: Toegankelijkheid
       conditions: Gebruiksvoorwaarden
