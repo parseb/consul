@@ -349,7 +349,7 @@ class SpendingProposalsController < ApplicationController
 
     def total_unknown_gender_or_age
       stats_cache('total_unknown_gender_or_age') {
-        participants.where("gender IS NULL OR date_of_birth is NULL").uniq.count
+        participants.where("gender IS NULL OR date_of_birth is NULL").distinct.count
       }
     end
 
