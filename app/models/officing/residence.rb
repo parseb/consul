@@ -6,10 +6,10 @@ class Officing::Residence
 
   before_validation :call_census_api
 
-  validates_presence_of :document_number
-  validates_presence_of :document_type
-  validates_presence_of :postal_code,   if:     :letter?
-  validates_presence_of :year_of_birth, unless: :letter?
+  validates :document_number, presence: true
+  validates :document_type, presence: true
+  validates :year_of_birth, presence: true, unless: :letter?
+  validates :postal_code, presence: true, if: :letter?
 
   validate :allowed_age
   validate :residence_in_madrid

@@ -26,12 +26,12 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     def sign_in_with(feature, provider)
       raise ActionController::RoutingError.new('Not Found') unless Setting["feature.#{feature}"]
 
-      auth = env["omniauth.auth"]
+      auth = request.env["omniauth.auth"]
 
       identity = Identity.first_or_create_from_oauth(auth)
       @user = current_user || identity.user || User.first_or_initialize_for_oauth(auth)
 
-      if save_user(@user)
+      if save_user
         log_event("registration", "successful_registration")
         identity.update(user: @user)
         sign_in_and_redirect @user, event: :authentication
@@ -42,12 +42,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       end
     end
 
-    def save_user(user)
+    def save_user
       @user.save || @user.save_requiring_finish_signup
     end
 
     def after_login
       log_event("login", "successful_login")
     end
-
 end

@@ -224,7 +224,7 @@ Rails.application.routes.draw do
   get "/verifica", to: "verification/letter#edit"
 
   namespace :admin do
-    root to: "dashboard#index"
+    root to: "dashboard#index", as: "root"
     resources :organizations, only: :index do
       get :search, on: :collection
       member do
@@ -267,15 +267,21 @@ Rails.application.routes.draw do
     resources :probes, only: [:index, :show]
 
     resources :budgets do
+      member do
+        put :calculate_winners
+      end
+
       resources :budget_groups do
         resources :budget_headings do
         end
       end
 
       resources :budget_investments, only: [:index, :show, :edit, :update] do
+        resources :budget_investment_milestones
         member { patch :toggle_selection }
       end
     end
+
 
     resources :signature_sheets, only: [:index, :new, :create, :show]
 
@@ -399,7 +405,7 @@ Rails.application.routes.draw do
   end
 
   namespace :moderation do
-    root to: "dashboard#index"
+    root to: "dashboard#index", as: "root"
 
     resources :users, only: :index do
       member do
@@ -425,7 +431,7 @@ Rails.application.routes.draw do
   end
 
   namespace :valuation do
-    root to: "budgets#index"
+    root to: "budgets#index", as: "root"
 
     resources :spending_proposals, only: [:index, :show, :edit] do
       patch :valuate, on: :member
@@ -439,7 +445,7 @@ Rails.application.routes.draw do
   end
 
   namespace :management do
-    root to: "dashboard#index"
+    root to: "dashboard#index", as: "root"
 
     resources :document_verifications, only: [:index, :new, :create] do
       post :check, on: :collection
@@ -526,7 +532,7 @@ Rails.application.routes.draw do
     end
 
     resource :session, only: [:new, :create]
-    root to: "dashboard#index"
+    root to: "dashboard#index", as: "root"
   end
 
   # GraphQL

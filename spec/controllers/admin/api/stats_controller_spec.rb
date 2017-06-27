@@ -17,9 +17,9 @@ describe Admin::Api::StatsController do
 
     context 'events present' do
       before :each do
-        time_1 = DateTime.parse("2015-01-01")
-        time_2 = DateTime.parse("2015-01-02")
-        time_3 = DateTime.parse("2015-01-03")
+        time_1 = DateTime.parse("2015-01-01").in_time_zone
+        time_2 = DateTime.parse("2015-01-02").in_time_zone
+        time_3 = DateTime.parse("2015-01-03").in_time_zone
 
         create :ahoy_event, name: 'foo', time: time_1
         create :ahoy_event, name: 'foo', time: time_1
@@ -31,7 +31,8 @@ describe Admin::Api::StatsController do
 
       it 'should return single events formated for working with c3.js' do
         sign_in user
-        get :show, event: 'foo'
+
+        get :show, params: { event: 'foo' }
 
         expect(response).to be_ok
 
@@ -42,15 +43,15 @@ describe Admin::Api::StatsController do
 
     context 'visits present' do
       it 'should return visits formated for working with c3.js' do
-        time_1 = DateTime.parse("2015-01-01")
-        time_2 = DateTime.parse("2015-01-02")
+        time_1 = DateTime.parse("2015-01-01").in_time_zone
+        time_2 = DateTime.parse("2015-01-02").in_time_zone
 
         create :visit, started_at: time_1
         create :visit, started_at: time_1
         create :visit, started_at: time_2
 
         sign_in user
-        get :show, visits: true
+        get :show, params: { visits: true }
 
         expect(response).to be_ok
 
@@ -61,8 +62,8 @@ describe Admin::Api::StatsController do
 
     context 'visits and events present' do
       it 'should return combined events and visits formated for working with c3.js' do
-        time_1 = DateTime.parse("2015-01-01")
-        time_2 = DateTime.parse("2015-01-02")
+        time_1 = DateTime.parse("2015-01-01").in_time_zone
+        time_2 = DateTime.parse("2015-01-02").in_time_zone
 
         create :ahoy_event, name: 'foo', time: time_1
         create :ahoy_event, name: 'foo', time: time_2
@@ -73,7 +74,8 @@ describe Admin::Api::StatsController do
         create :visit, started_at: time_2
 
         sign_in user
-        get :show, event: 'foo', visits: true
+
+        get :show, params: { event: 'foo', visits: true }
 
         expect(response).to be_ok
 
@@ -84,15 +86,15 @@ describe Admin::Api::StatsController do
 
     context 'budget investments present' do
       it 'should return budget investments formated for working with c3.js' do
-        time_1 = DateTime.parse("2017-04-01")
-        time_2 = DateTime.parse("2017-04-02")
+        time_1 = DateTime.parse("2017-04-01").in_time_zone
+        time_2 = DateTime.parse("2017-04-02").in_time_zone
 
         budget_investment1 = create(:budget_investment, budget: @budget, created_at: time_1)
         budget_investment2 = create(:budget_investment, budget: @budget, created_at: time_2)
         budget_investment3 = create(:budget_investment, budget: @budget, created_at: time_2)
 
         sign_in user
-        get :show, budget_investments: true
+        get :show, params: { budget_investments: true }
 
         expect(response).to be_ok
 

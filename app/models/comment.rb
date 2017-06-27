@@ -1,4 +1,4 @@
-class Comment < ActiveRecord::Base
+class Comment < ApplicationRecord
   include Flaggable
   include HasPublicAuthor
   include Graphqlable
@@ -13,11 +13,11 @@ class Comment < ActiveRecord::Base
   validates :body, presence: true
   validates :user, presence: true
 
-  validates_inclusion_of :commentable_type, in: ["Debate", "Proposal", "SpendingProposal", "ProbeOption", "Poll::Question", "Budget::Investment", "Legislation::Question", "Legislation::Annotation"]
+  validates :commentable_type, inclusion: { in: ["Debate", "Proposal", "SpendingProposal", "ProbeOption", "Poll::Question", "Budget::Investment", "Legislation::Question", "Legislation::Annotation"] }
 
   validate :validate_body_length
 
-  belongs_to :commentable, -> { with_hidden }, polymorphic: true, counter_cache: true
+  belongs_to :commentable, -> { with_hidden }, polymorphic: true, counter_cache: true, touch: true
   belongs_to :user, -> { with_hidden }
 
   before_save :calculate_confidence_score
