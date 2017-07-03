@@ -14,7 +14,6 @@ module Abilities
       can :read, Poll::Question
 
       can [:read, :welcome], Budget
-      can :read_results, Budget, phase: "finished"
       can [:read, :print], Budget::Investment
       can [:read], Budget::Group
 
@@ -34,7 +33,7 @@ module Abilities
       can [:read], Budget
       can [:read], Budget::Group
       can [:read, :print], Budget::Investment
-      can :read_results, Budget, phase: "finished"
+      can :read_results, Budget, phase: ['reviewing_ballots', 'finished']
       can :read_stats, Budget, phase: ['reviewing_ballots', 'finished']
 
       can [:read, :changes, :go_to_version], Legislation::DraftVersion
