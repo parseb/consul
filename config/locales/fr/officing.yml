@@ -1,103 +1,110 @@
----
 fr:
   officing:
     header:
-      title: Votes
+      title: Votaciones
     dashboard:
       index:
-        title: Bureaux de vote
-        info: Ici vous pouvez valider les documents des utilisateurs et enregistrer les résultats des votes
+        title: Presidir mesa de votaciones
+        info: Aquí puedes validar documentos de ciudadanos y guardar los resultados de las urnas
     menu:
-      voters: "Valider un document"
-      recounts: "Enregistrer le dépouillement"
-      final_recounts: "Dépouillements finaux et résultats"
+      voters: "Validar documento y votar"
+      letters: "Validar documento"
+      recounts: "Recuento diario"
+      final_recounts: "Recuento final y escrutinio"
     polls:
       index:
-        title: "Liste des votes"
-        no_polls: "Vous n'êtes responsable d'aucun vote actif"
-        select_poll: "Sélectionner un vote"
-        add_recount: "Ajouter un dépouillement"
+        title: "Listado de votaciones"
+        no_polls: "No eres presidente de mesa en ninguna votación activa"
+        select_poll: "Selecciona votación"
+        add_recount: "Añadir recuento"
       final:
-        title: "Liste des votes finaux"
-        no_polls: "Vous n'êtes responsable d'aucun dépouillement final pour aucun des votes actifs"
-        select_poll: "Sélectionner un vote"
-        add_recount: "Ajouter le dépouillement final"
-        add_results: "Ajouter les résultats"
+        title: "Listado de votaciones finalizadas"
+        no_polls: "No tienes permiso para recuento final en ninguna votación reciente"
+        select_poll: "Selecciona votación"
+        add_recount: "Añadir recuentos finales"
+        add_results: "Añadir resultados"
+    booth:
+      new:
+        title: "Escoge tu urna"
+    sessions:
+      create:
+        flash:
+          wrong_password: "Contraseña inválida"
     recounts:
       flash:
-        create: "Données ajoutées"
-        error_create: "Décompte NON ajouté. Erreur dans les données."
+        create: "Datos añadidos"
+        error_create: "Recuento NO añadido. Error en los datos"
       new:
-        title: "%{poll} - Ajouter le dépouillement quotidien"
-        not_allowed: "Vous n'êtes pas le président de ce vote"
-        booth_date: "Bureau de vote et date"
-        select_booth_date: "Sélectionner un bureau de vote et une date"
-        count: "Décompte des votes"
-        count_placeholder: "Décompte des votes"
-        submit: "Sauvegarder"
-        recount_list: "Vos dépouillements"
-        booth: "Urne"
-        date: "Date"
+        title: "%{poll} - Añadir recuento diario"
+        not_allowed: "No eres presidente de mesa en esta votación"
+        booth_date: "Fecha y urna"
+        select_booth_date: "Elige fecha y urna"
+        count: "Número de votos"
+        count_placeholder: "Número de votos"
+        submit: "Guardar"
+        recount_list: "Tus recuentos"
+        booth: "Urna"
+        date: "Fecha"
     final_recounts:
       flash:
-        create: "Données ajoutées"
-        error_create: "Décompte final NON ajouté. Erreur dans les données."
+        create: "Datos añadidos"
+        error_create: "Recuento final NO añadido. Error en los datos"
       new:
-        title: "%{poll} - Ajouter le dépouillement final"
-        not_allowed: "Vous n'êtes pas autorisés à ajouter les dépouillements finaux pour ce vote"
-        booth: "Bureau de vote"
-        date: "Date"
-        select_booth: "Sélectionner un bureau de vote"
-        select_date: "Sélectionner une date"
-        count: "Décompte final des votes"
-        count_placeholder: "Décompte final des votes"
-        submit: "Sauvegarder"
-        final_recount_list: "Vos dépouillements finaux"
-        system_count: "Dépouillement par le système"
-        add_results: "Ajouter les résultats"
+        title: "%{poll} - Añadir recuento final"
+        intro_html: "Junte los sobres de votación de <strong>todos</strong> los días e introduzca la siguiente información:"
+        not_allowed: "No tienes permiso para introducir recountos finales"
+        booth: "Urna"
+        select_booth: "Elige urna"
+        count: "Recuento final"
+        count_placeholder: "Número final de votos"
+        submit: "Guardar"
+        final_recount_list: "Tus recuentos finales"
+        add_results: "Añadir resultados"
     results:
       flash:
-        create: "Résultats sauvegardés"
-        error_create: "Résultats NON sauvegardés. Erreur dans les données."
-        error_wrong_booth: "Mauvaise urne. Résultats NON sauvegardés."
-        error_wrong_date: "Mauvaise date. Résultats NON sauvegardés."
+        create: "Datos guardados"
+        error_create: "Resultados NO añadidos. Error en los datos"
+        error_wrong_booth: "Urna incorrecta. Resultados NO guardados."
+        error_wrong_date: "Fecha incorrecta. Resultados NO guardados."
       new:
-        title: "%{poll} - Ajouter des résultats"
-        not_allowed: "Vous n'êtes pas autorisé à ajouter des résultats pour ce vote"
-        booth: "Bureau de vote"
-        date: "Date"
-        select_booth: "Sélectionner une bureau de vote"
-        select_date: "Sélectionner une date"
-        ballots_white: "Votes blancs"
-        ballots_null: "Votes invalides"
-        submit: "Sauvegarder"
-        results_list: "Vos résultats"
-        see_results: "Voir les résultats"
+        title: "%{poll} - Añadir resultados"
+        intro_html: "Junte los sobres de votación de <strong>todos</strong> los días e introduzca la siguiente información:"
+        not_allowed: "No tienes permiso para introducir resultados"
+        booth: "Urna"
+        date: "Día"
+        select_booth: "Elige urna"
+        ballots_white: "Papeletas en blanco"
+        ballots_null: "Papeletas nulas"
+        submit: "Guardar"
+        results_list: "Tus resultados"
+        see_results: "Ver resultados"
       index:
-        no_results: "Pas de résultats"
-        results: Résultats
-        table_answer: Réponse
-        table_votes: Votes
-        table_whites: "Votes blancs"
-        table_nulls: "Votes invalides"
+        no_results: "No hay resultados"
+        results: "Resultados"
+        table_answer: Respuesta
+        table_votes: Votos
+        table_whites: Papeletas en blanco
+        table_nulls: Papeletas nulas
     residence:
       flash:
-        create: "Document vérifié avec le recensement"
-        not_allowed: "Vous n'avez pas de votes à superviser aujourd'hui"
+        create: "Documento verificado con el Padrón"
+        not_allowed: "Hoy no tienes turno de presidente de mesa"
       new:
-        title: Valider le document
-        document_number: "Numéro du document (incluant les lettres)"
-        submit: Valider le document
-        error_verifying_census: "Le recensement n'a pas pu vérifier ce document."
-        form_errors: a empêché la vérification de ce document
-        no_assignments: "Vous n'avez pas de votes à superviser aujourd'hui"
+        title: Validar documento
+        document_number: "Número de documento"
+        submit: Validar documento
+        error_verifying_census: El Padrón no pudo verificar este documento.
+        form_errors: evitaron verificar este documento
+    letter:
+      new:
+        alredy_voted: "Voto Reformulado"
     voters:
       new:
-        title: Votes
-        table_poll: Vote
-        table_actions: Statut des votes
+        title: Votaciones
+        table_poll: Votación
+        table_actions: Estado de las votaciones
       show:
-        can_vote: Peut voter
-        error_already_voted: a déjà participé à ce vote
-        submit: Confirmer le vote
-        success: "A voté !"
+        can_vote: Puede votar
+        error_already_voted: "Ya ha participado en esta votación."
+        submit: Confirmar voto
+        success: "¡Voto introducido!"
