@@ -1,112 +1,111 @@
----
 fr:
   verification:
     alert:
-      lock: Vous avez atteint le nombre maximum de tentatives. Merci de réessayer plus tard.
-    back: Revenir à mon compte
+      lock: Has llegado al máximo número de intentos. Por favor intentalo de nuevo más tarde.
+    back: Volver a mi cuenta
     email:
       create:
         alert:
-          failure: Un problème est survenu dans l'envoi de courriel à votre adresse.
+          failure: Hubo un problema enviándote un email a tu cuenta
         flash:
-          success: 'Nous avons envoyé un courriel de confirmation à votre adresse %{email}'
+          success: 'Te hemos enviado un email de confirmación a tu cuenta: %{email}'
       show:
         alert:
-          failure: Code de vérification incorrect
+          failure: Código de verificación incorrecto
         flash:
-          success: Vous êtes un utilisateur vérifié
+          success: Eres un usuario verificado
     letter:
       alert:
-        unconfirmed_code: "Vous n'avez pas encore renseigné votre code de confirmation"
+        unconfirmed_code: Todavía no has introducido el código de confirmación
       create:
         flash:
-          offices: Bureaux de conseil aux citoyens
-          success_html: "Merci d'avoir demandé votre <b>code de sécurité maximum (uniquement requis pour les votes finaux)</b>.  Dans quelques jours, nous vous enverrons un courrier vers votre adresse postale. Si vous le préférez, vous pouvez récupérer votre code dans n'importe quel %{offices}."
+          offices: Oficinas de Atención al Ciudadano
+          offices_url: 'http://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Atencion-al-ciudadano/Oficinas-de-Atencion-al-Ciudadano?vgnextfmt=default&vgnextchannel=5b99cde2e09a4310VgnVCM1000000b205a0aRCRD'
+          success_html: Próximamente recibirás una carta por correo postal con las instrucciones para añadir un doble comprobación a tu cuenta.<br> Recuerda que puedes ahorrar el envío acudiendo presencialmente a cualquiera de las %{offices}.
       edit:
-        see_all: Voir les propositions
-        title: Lettre requise
+        see_all: Empezar a participar
+        title: Doble comprobación de verificación
       errors:
-        incorrect_code: Code de vérification incorrect
+        incorrect_code: Código de verificación incorrecto
       new:
-        explanation: "Pour participer au vote final, vous pouvez :"
-        go_to_index: Voir les propositions
-        office: Vérifier dans n'importe quel %{office}
-        offices: Bureaux de conseil aux citoyens
-        send_letter: Envoyer une lettre avec le code
-        title: "Félicitations !"
-        user_permission_info: Avec votre compte, vous pouvez...
+        go_to_index: Empezar a participar
+        title: "¡Felicidades!"
+        user_permission_info: Con tu cuenta ya puedes...
       update:
         flash:
-          success: Votre compte est vérifié
-    redirect_notices:
-      already_verified: Votre compte est déjà vérifié
-      email_already_sent: Nous vous avons envoyé un courriel avec un lien de confirmation. Si vous ne l'avez pas reçu, vous pouvez demander qu'on vous le renvoie ici.
-    residence:
-      alert:
-        unconfirmed_residency: Vous n'avez pas encore confirmé votre résidence
-      create:
-        flash:
-          success: Résidence vérifiée
-      new:
-        accept_terms_text: "J'accepte %{terms_url} du recensement."
-        accept_terms_text_title: J'accepte les termes et conditions d'accès au recensement
-        date_of_birth: Date de naissance
-        document_number: Numéro de document
-        document_number_help_title: Aide
-        document_number_help_text_html: "<strong>Carte d'identité</strong>: 12345678A<br> <strong>Passeport</strong>: AAA000001<br> <strong>Carte de résident</strong>: X1234567P"
-        document_type:
-          passport: Passeport
-          residence_card: Carte de résident
-          spanish_id: Carte d'identité
-        document_type_label: Type de document
-        error_not_allowed_age: Vous n'avez pas l'âge requis pour participer
-        error_not_allowed_postal_code: Vous devez être enregistré pour être vérifié.
-        error_verifying_census: Le recensement n'a pas pu vérifier vos informations. Merci de confirmer que vos informations sont correctes en appelant la mairie ou en visitant n'importe quel %{offices}.
-        error_verifying_census_offices: Bureaux de conseil aux citoyens
-        form_errors: ont empêché la vérification de votre résidence
-        postal_code: Code postal
-        postal_code_note: Pour vérifier votre compte, vous devez être enregistrés.
-        terms: les termes et conditions d'accès
-        title: Vérifier la résidence
-        verify_residence: Vérifier la résidence
+          success: Tu cuenta ya está verificada
     sms:
+      new:
+        title: "SMS de confirmación"
+        phone: "Introduce tu teléfono móvil para recibir el código"
+        phone_format_html: '<strong><em>(Ejemplo: 612345678 ó +34612345678)</em></strong>'
+        phone_note: "Sólo usaremos tu teléfono para enviarte un código, nunca te contactaremos."
+        phone_placeholder: 'Ejemplo: 612345678 ó +34612345678'
+        submit_button: "Enviar"
       create:
         flash:
-          success: Entrer le code de confirmation envoyé par texto
+          success: Introduce el código de confirmación que te hemos enviado por mensaje de texto
       edit:
-        confirmation_code: Entrer le code reçu sur votre mobile
-        resend_sms_link: Cliquer ici pour le renvoyer
-        resend_sms_text: Le code de confirmation n'a pas encore été reçu ?
-        submit_button: Envoyer
-        title: Confirmation du code de sécurité
-      new:
-        phone: Entrez votre numéro de téléphone mobile pour recevoir le code
-        phone_format_html: "<strong><em>(Exemple: 612345678 or +34612345678)</em></strong>"
-        phone_note: Nous utiliserons uniquement votre numéro de téléphone pour vous envoyer ce code, sans jamais vous recontacter par la suite.
-        phone_placeholder: "Exemple: 612345678 or +34612345678"
-        submit_button: Envoyer
-        title: Envoyer le code de confirmation
+        confirmation_code: Introduce el código que has recibido en tu móvil
+        resend_sms_link: Solicitar un nuevo código
+        resend_sms_text: "¿No has recibido un mensaje de texto con tu código de confirmación?"
+        submit_button: Enviar
+        title: SMS de confirmación
       update:
-        error: Code de vérification incorrect
+        error: Código de confirmación incorrecto
         flash:
           level_three:
-            success: Code correct. Votre compte est maintenant vérifié.
+            success: Código correcto. Tu cuenta ya está verificada
           level_two:
-            success: Code correct
-    step_1: Résidence
-    step_2: Code de confirmation
-    step_3: Vérification finale
-    user_permission_debates: Participer aux débats
-    user_permission_info: En vérifiant votre compte vous pourrez...
-    user_permission_proposal: Créer de nouvelles propositions
-    user_permission_support_proposal: Soutenir des propositions
-    user_permission_votes: Participer au vote final*
+            success: Código correcto
+    redirect_notices:
+      already_verified: Tu cuenta está verificada
+      email_already_sent: Ya te enviamos un email con un enlace de confirmación, si no lo encuentras puedes solicitar aquí que te lo reenviemos
+    residence:
+      alert:
+        unconfirmed_residency: Aún no has verificado tu residencia
+      create:
+        flash:
+          success: Residencia verificada
+      new:
+        accept_terms_text: Acepto %{terms_url} al Padrón
+        accept_terms_text_title: Acepto los términos de acceso al Padrón
+        date_of_birth: Fecha de nacimiento
+        document_number: Número de documento
+        document_number_help_title: Ayuda
+        document_number_help_text_html: '<strong>DNI</strong>: 12345678A<br> <strong>Pasaporte</strong>: AAA000001<br> <strong>Tarjeta de residencia</strong>: X1234567P'
+        document_type:
+          passport: Pasaporte
+          residence_card: Tarjeta de residencia
+          spanish_id: DNI
+        document_type_label: Tipo de documento
+        error_not_allowed_age: No tienes la edad mínima para participar
+        error_can_not_redeem_code: No se pudo validar el código. Por favor asegúrese de que es correcto. Si aun así no es correcto, déjelo en blanco (puede rellenarlo más tarde).
+        error_not_allowed_postal_code: Para verificarte debes estar empadronado en el municipio de Madrid.
+        error_verifying_census: El Padrón de Madrid no pudo verificar tu información. Por favor, confirma que tus datos de empadronamiento sean correctos llamando al 010 (o a su versión gratuita 915298210) o visita cualquiera de las %{offices}.
+        error_verifying_census_offices: 26 Oficinas de Atención al Ciudadano
+        form_errors: evitaron verificar tu residencia
+        postal_code: Código postal
+        postal_code_note: Para verificar tus datos debes estar empadronado en el municipio de Madrid
+        redeemable_code: Código de verificación por carta (opcional)
+        redeemable_code_note: Si ha recibido un código de verificación por carta, puede introducirlo aquí. Si no lo ha recibido o no funciona, déjelo en blanco (puede rellenarlo más tarde).
+        terms: los términos de acceso
+        title: Verificar residencia
+        verify_residence: Verificar residencia
+    step_1: Residencia
+    step_2: SMS de confirmación
+    step_3: Verificación final
+    user_permission_debates: Participar en debates
+    user_permission_info: Al verificar tus datos podrás...
+    user_permission_proposal: Crear nuevas propuestas
+    user_permission_support_proposal: Apoyar propuestas
+    user_permission_votes: Participar en las votaciones finales
     verified_user:
       form:
-        submit_button: Envoyer le code
+        submit_button: Enviar código
       show:
-        email_title: Courriels
-        explanation: Nous disposons actuellement des informations suivantes dans notre base de données. Merci de sélectionner une méthode pour l'envoi de votre code de confirmation.
-        phone_title: Numéros de téléphone
-        title: Informations disponibles
-        use_another_phone: Utiliser un autre téléphone
+        email_title: Emails
+        explanation: Actualmente disponemos de los siguientes datos en el Padrón, selecciona donde quieres que enviemos el código de confirmación.
+        phone_title: Teléfonos
+        title: Información disponible
+        use_another_phone: Utilizar otro teléfono
