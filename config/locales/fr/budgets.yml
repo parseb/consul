@@ -2,116 +2,172 @@ fr:
   budgets:
     ballots:
       show:
-        title: Votre vote
-        amount_spent: Montant dépensé
-        remaining: "Il vous reste <span>%{amount}</span> à investir."
-        no_balloted_group_yet: "Vous n'avez pas encore voté dans ce groupe, allez voter !"
-        remove: Supprimer le vote
+        title: Mis votos
+        amount_spent: Coste total
+        remaining: "Te quedan <span>%{amount}</span> para invertir"
+        no_balloted_group_yet: "Todavía no has votado proyectos de este grupo, ¡vota!"
+        remove: Quitar voto
         voted_html:
-          one: "Vous avez voté pour <span>une</span> proposition."
-          other: "Vous avez voté pour <span>%{count}</span> propositions."
-        voted_info_html: "Vous pouvez modifier votre vote à tout moment jusqu'à la fin de cette phase.<br> Vous n'avez pas besoin de dépenser tout le budget disponible."
-        zero: "Vous n'avez voté pour aucune des propositions d'investissement."
+          one: "Has votado <span>un</span> proyecto."
+          other: "Has votado <span>%{count}</span> proyectos."
+        voted_info_html: "Puedes cambiar tus votos en cualquier momento hasta el cierre de esta fase.<br> No hace falta que gastes todo el dinero disponible."
+        zero: "Todavía no has votado ningún proyecto de gasto."
       reasons_for_not_balloting:
-        not_logged_in: Vous devez %{signin} ou %{signup} pour continuer.
-        not_verified: Seuls les utilisateurs vérifiés peuvent voter pour les propositions, %{verify_account}.
-        organization: Les organisations ne sont pas autorisées à voter.
-        not_selected: Les propositions d'investissement non-sélectionnées ne peuvent être soutenues.
-        not_enough_money: "Vous n'avez pas assez de fonds."
-        no_ballots_allowed: La phase de sélection est terminée.
-        different_heading_assigned: Vous avez déjà voté pour une autre section de cette proposition.
+        not_logged_in: Necesitas %{signin} o %{signup} para continuar.
+        not_verified: Los proyectos de gasto sólo pueden ser apoyados por usuarios verificados, %{verify_account}.
+        organization: Las organizaciones no pueden votar.
+        not_selected: No se pueden votar proyectos inviables.
+        not_enough_money_html: "Ya has asignado el presupuesto disponible.<br><small>Recuerda que puedes %{change_ballot} en cualquier momento</small>"
+        no_ballots_allowed: El periodo de votación está cerrado.
+        different_heading_assigned: Ya has votado proyectos de otro distrito.
+        change_ballot: cambiar tus votos
     groups:
       show:
-        title: Sélectionner une option
-        unfeasible_title: Investissements infaisables
-        unfeasible: Voir les investissements infaisables
-        unselected_title: Investissements non-sélectionnés pour la phase de vote
-        unselected: Voir les investissements non-sélectionnés pour la phase de vote
+        title: Selecciona una opción
+        unfeasible_title: Propuestas inviables
+        unfeasible: Ver propuestas inviables
+        unselected_title: Propuestas no seleccionadas para la votación final
+        unselected: Ver las propuestas no seleccionadas para la votación final
     phase:
-      accepting: Présentation des projets
-      reviewing: Revue interne des projets
-      selecting: Phase de sélection
-      valuating: Évaluation des projets
-      balloting: Vote final
-      reviewing_ballots: Clôture des votes
-      finished: Résultats
+      accepting: Presentación de proyectos
+      reviewing: Revisión interna de proyectos
+      selecting: Fase de apoyos
+      valuating: Evaluación de proyectos
+      balloting: Votación final
+      reviewing_ballots: Votación finalizada
+      finished: Resultados
     index:
-      title: Budgets participatifs
+      title: Presupuestos participativos
     investments:
       form:
-        tag_category_label: "Catégories"
-        tags_instructions: "Marquez cette proposition. Vous pouvez choisir parmi les catégories proposées ou en ajouter"
-        tags_label: Sujets
-        tags_placeholder: "Saisissez les étiquettes que vous souhaitez utiliser, séparées par des virgules (',')"
+        tags_instructions: "Etiqueta este proyecto. Puedes elegir entre las categorías propuestas o introducir las que desees"
+        tags_label: Temas
+        tag_category_label: "Categorías"
+        tags_placeholder: "Escribe las etiquetas que desees separadas por una coma (',')"
+        faq: "¿Qué puedes proponer?"
+        faq_link: "Mira toda la información sobre los presupuestos participativos"
       index:
-        title: Budget participatif
-        unfeasible: Propositions d'investissement infaisables
-        unfeasible_text: "Les propositions doivent satisfaire un certain nombre de critères (être légale, concrète, relever des compétences de la Ville, ne pas dépasser le plafond des budgets, %{definitions}) pour être déclarer viable et atteindre le stade final des votes. Toutes les propositions qui ne respectent pas ces critères sont identifiées comme infaisables et publiées dans la liste suivante, accompagnées de leur rapport d'infaisabilité."
-        unfeasible_text_definitions: voir les définitions ici
-        by_heading: "Portée des propositions d'investissement: %{heading}"
+        title: Presupuestos participativos
+        unfeasible: Proyectos de gasto no viables
+        unfeasible_text: Los proyectos presentados deben cumplir una serie de criterios (legalidad, concreción, ser competencia del Ayuntamiento, no superar el tope del presupuesto; %{definitions}) para ser declarados viables y llegar hasta la fase de votación final. Todos los proyectos que no cumplen estos criterios son marcados como inviables y publicados en la siguiente lista, junto con su informe de inviabilidad.
+        unfeasible_text_definitions: ver definiciones aquí
+        by_heading_html: "Proyectos de gasto con ámbito:<br>%{heading}"
         search_form:
-          button: Rechercher
-          placeholder: Rechercher des propositions d'investissement...
-          title: Recherche
-        search_results:
-          one: " contenant le terme '%{search_term}'"
-          other: " contenant les termes '%{search_term}'"
+          button: Buscar
+          placeholder: Buscar proyectos de gasto...
+          title: Buscar
+        search_results_html:
+          one: " que contiene <strong>'%{search_term}'</strong>"
+          other: " que contienen <strong>'%{search_term}'</strong>"
         sidebar:
-          my_ballot: Mon vote
+          my_ballot: Mis votos
           voted_html:
-            one: "<strong>Vous avez voté une proposition pour un coût de %{amount_spent}</strong>"
-            other: "<strong>Vous avez voté %{count} propositions pour un coût de %{amount_spent}</strong>"
-          voted_info: Vous pouvez %{link} à tout moment jusqu'à la clôture de cette phase. Vous n'avez pas besoin de dépenser tout le budget disponible.
-          voted_info_link: modifier votre vote
-          different_heading_assigned_html: "Vous avez des votes actifs dans une autre section : %{heading_link}"
-          zero: Vous n'avez voté pour aucune proposition d'investissement dans ce groupe.
-          verified_only: "Pour créer une proposition d'investissement %{verify}."
-          verify_account: "vérifiez votre compte"
-          create: "Créer une proposition d'investissement"
-          not_logged_in: "Pour créer une proposition d'investissement, vous devez vous %{sign_in} ou %{sign_up}."
-          sign_in: "connecter"
-          sign_up: "enregistrer"
-          by_feasibility: Par faisabilité
-          feasible: Projets faisables
-          unfeasible: Projets infaisables
+            one: "<strong>Has votado una proyecto por un valor de %{amount_spent}</strong>"
+            other: "<strong>Has votado %{count} proyectos por un valor de %{amount_spent}</strong>"
+          voted_info: Puedes %{link} en cualquier momento hasta el cierre de esta fase. No hace falta que gastes todo el dinero disponible.
+          voted_info_link: cambiar tus votos
+          different_heading_assigned_html: 'Ya apoyaste propuestas de otro distrito: %{heading_link}'
+          change_ballot: "Si cambias de opinión puedes borrar tus votos en %{check_ballot} y volver a empezar."
+          check_ballot_link: "revisar mis votos"
+          zero: "Todavía no has votado ninguna propuesta de inversión en este ámbito del presupuesto."
+          verified_only: "Para crear una nueva propuesta de inversión %{verify}."
+          verify_account: "verifica tu cuenta"
+          create: "Crear proyecto de gasto"
+          not_logged_in: "Para crear un nuevo proyecto de gasto debes %{sign_in} o %{sign_up}."
+          sign_in: "iniciar sesión"
+          sign_up: "registrarte"
+          by_feasibility: Por viabilidad
+          feasible: Ver los proyectos viables
+          unfeasible: Ver los proyectos inviables
         orders:
-          random: aléatoire
-          confidence_score: les mieux notés
-          price: par coût
+          random: Aleatorias
+          confidence_score: Mejor valoradas
+          price: Por coste
       show:
-        author_deleted: Utilisateur supprimé
-        price_explanation: Explication du coût
-        unfeasibility_explanation: Explication de l'infaisabilité
-        code_html: 'Code de la proposition de dépense: <strong>%{code}</strong>'
-        location_html: 'Lieu: <strong>%{location}</strong>'
-        organization_name_html: 'Organisation: <strong>%{name}</strong>'
-        share: Partager
-        title: Proposition d'investissement
-        supports: Soutiens
-        votes: Votes
-        price: Coût
-      wrong_price_format: Nombres entiers uniquement
+        author_deleted: Usuario eliminado
+        price_explanation: Informe de coste
+        unfeasibility_explanation: Informe de inviabilidad
+        code_html: 'Código proyecto de gasto: <strong>%{code}</strong>'
+        location_html: 'Ubicación: <strong>%{location}</strong>'
+        organization_name_html: 'Organización: <strong>%{name}</strong>'
+        share: Compartir
+        title: Proyecto de gasto
+        supports: Apoyos
+        votes: Votos
+        price: Coste
+        comments_tab: Comentarios
+        milestones_tab: Seguimiento
+        no_milestones: No hay hitos definidos
+        milestone_publish_date: "Publicado el %{publish_date}"
+      wrong_price_format: Solo puede incluir caracteres numéricos
       investment:
-        title: Proposition d'investissement
-        add: Voter
-        already_added: Vous avez déjà ajouté cette proposition d'investissement.
-        already_supported: Vous avez déjà soutenu cette proposition. Partagez-la !
-        support_title: Soutenir cette proposition
-        confirm_group: "Vous pouvez seulement soutenir les propositions d'un district. Si vous continuez, vous ne pourrez pas changer ce choix. Êtes-vous sûr(e) ?"
+        add: Votar
+        already_added: "Ya has añadido este proyecto de gasto"
+        already_supported: Ya has apoyado este proyecto. ¡Compártelo!
+        support_title: Apoyar este proyecto
+        confirm_group: "Sólo puedes apoyar proyectos en un distrito. Si sigues adelante no podrás cambiar esta decisión. ¿Estás seguro?"
         supports:
-          one: 1 soutien
-          other: "%{count} soutiens"
-          zero: Pas de soutiens
-        give_support: Soutenir
+          one: 1 apoyo
+          other: "%{count} apoyos"
+        give_support: Apoyar
       header:
-        check_ballot: Vérifier mon vote
-        different_heading_assigned_html: "Vous avez des votes actifs dans d'autres sections : %{heading_link}"
+        check_ballot: Revisar mis votos
+        different_heading_assigned_html: 'Ya has votado proyectos de otro distrito: %{heading_link}'
+        change_ballot: "Si cambias de opinión puedes borrar tus votos en %{check_ballot} y volver a empezar."
+        check_ballot_link: "revisar mis votos"
     progress_bar:
-      available: "Disponible : "
+      available: 'Disponible: '
     show:
-      group: Groupe
-      phase: Phase actuelle
-      unfeasible_title: Propositions infaisables
-      unfeasible: Voir les propositions infaisables
-      unselected_title: Propositions non-sélectionnées pour la phase de vote
-      unselected: Voir les propositions non-sélectionnées pour la phase de vote
+      group: Grupo
+      phase: Fase actual
+      unfeasible_title: Propuestas inviables
+      unfeasible: Ver las propuestas inviables
+      unselected_title: Propuestas no seleccionadas para la votación final
+      unselected: Ver las propuestas no seleccionadas para la votación final
+      see_results: Ver resultados
+    results:
+      link: Resultados
+      page_title: "%{budget} - Resultados"
+      heading: "Resultados"
+      heading_selection_title: "Ámbito de actuación"
+      spending_proposal: Título
+      ballot_lines_count: Votos
+      hide_discarded_link: Ocultar descartadas
+      show_all_link: Mostrar todas
+      price: Coste
+      amount_available: Presupuesto disponible
+      accepted: 'Propuesta de inversión aceptada: '
+      discarded: 'Propuesta de inversión descartada: '
+      incompatibles: Incompatibles
+    stats:
+      title: Estadísticas de participación
+      link: Estadísticas
+      page_title: "%{budget} - Estadísticas de participación"
+      total_participants: Total participantes
+      total_budget_investments: Total propuestas enviadas
+      total_selected_investments: Propuestas en la fase final
+      total_unfeasible_investments: Propuestas inviables
+      total_participants_support_phase: Fase de apoyos
+      participants: Participantes
+      supports: Apoyos
+      votes: Votos
+      total_participants_vote_phase: Fase de votación
+      total: Total
+      by_gender: "Participación por género"
+      total_male_participants: Hombres
+      total_female_participants: Mujeres
+      by_age: "Participación por grupos de edad"
+      age: Edad
+      more_than: Más de
+      years: años
+      by_heading: "Participación por distritos"
+      heading: Distrito
+      investments_sent_html: "Propuestas<br>enviadas"
+      participants_support_phase: Participación fase apoyos
+      participants_voting_phase: Participación fase votación
+      participants_total: Participación total
+      percent_total_participants_html: "% <br>Total<br>Participantes"
+      percent_heading_census_html: "% <br>Censo<br>Distrito"
+      no_demographic_data: "* No se dispone de los datos demográficos de %{total} participantes."
+      participatory_disclaimer: "** Las cifras de participación total se refieren a personas que han creado, apoyado o votado propuestas."
+      heading_disclaimer: "*** Los datos de distrito se refieren al distrito en el que el usuario ha votado, no necesariamente en el que está empadronado."
