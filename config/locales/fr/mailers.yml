@@ -1,93 +1,88 @@
----
 fr:
   mailers:
-    no_reply: "Ce message a été envoyé d'une adresse qui n'accepte pas les réponses."
+    no_reply: "Este mensaje se ha enviado desde una dirección de correo electrónico que no admite respuestas."
     comment:
-      hi: Bonjour
-      new_comment_by_html: Il y a un nouveau commentaire de <b>%{commenter}</b>
-      subject: Quelqu'un a commenté votre %{commentable}
-      title: Nouveau commentaire
+      hi: Hola
+      new_comment_by_html: Hay un nuevo comentario de <b>%{commenter}</b> en
+      subject: Alguien ha comentado en tu %{commentable}
+      title: Nuevo comentario
     config:
-      manage_email_subscriptions: Pour ne plus recevoir ces courriels, changer vos options dans
+      manage_email_subscriptions: Puedes dejar de recibir estos emails cambiando tu configuración en
     email_verification:
-      click_here_to_verify: sur ce lien
-      instructions_2_html: Ce courriel va vérifier votre compte avec <b>%{document_type}%{document_number}</b>. Si ce compte ne vous appartient pas, veuillez ne pas cliquer sur le lien et ignorer ce courriel.
-      instructions_html: Pour confirmer la vérification de votre compte sur le Portail Gouvernement Ouvert, vous devez cliquer %{verification_link}.
-      subject: Confirmer votre courriel
-      thanks: Merci beaucoup.
-      title: Confirmer votre compte en utilisant le lien suivant
+      click_here_to_verify: en este enlace
+      instructions_2_html: Este email es para verificar tu cuenta con <b>%{document_type} %{document_number}</b>. Si esos no son tus datos, por favor no pulses el enlace anterior e ignora este email.
+      instructions_html: Para terminar de verificar tu cuenta de usuario en el Portal de Gobierno Abierto del Ayuntamiento de Madrid, necesitamos que pulses %{verification_link}.
+      subject: Verifica tu email
+      thanks: Muchas gracias.
+      title: Verifica tu cuenta con el siguiente enlace
     reply:
-      hi: Bonjour
-      new_reply_by_html: Il y a une nouvelle réponse de <b>%{commenter}</b> à votre commentaire sur
-      subject: Quelqu'un a répondu à votre commentaire
-      title: Nouvelle réponse à votre commentaire
+      hi: Hola
+      new_reply_by_html: Hay una nueva respuesta de <b>%{commenter}</b> a tu comentario en
+      subject: Alguien ha respondido a tu comentario
+      title: Nueva respuesta a tu comentario
     unfeasible_spending_proposal:
-      hi: "Cher(e) utilisateur(trice),"
-      new_html: "Pour tout cela, nous vous invitons à élaborer une <strong>nouvelle proposition</strong> qui soit conforme aux conditions de ce processus. Vous pouvez faire cela en allant sur le lien suivant: %{url}."
-      new_href: "nouvelle proposition d'investissement"
-      reconsider_html: "Si vous pensez que la proposition rejetée remplit les exigences pour être une proposition d'investissement, vous pouvez le communiquer sous 48 heures en répondant à l'adresse examples@consul.es. Incluez le code %{code} dans le sujet de votre courriel."
-      sincerely: "Cordialement"
-      signatory: "DÉPARTEMENT DE LA PARTICIPATION PUBLIQUE"
-      sorry: "Désolé du dérangement et nous vous remercions à nouveau pour votre inestimable participation."
-      subject: "Votre proposition d'investissement '%{code}' a été marquée comme infaisable"
-      unfeasible_html: "La Ville souhaite vous remercier pour votre participation aux <strong>budgets participatifs</strong>. Nous avons le regret de vous informer que votre proposition <strong>'%{title}'</strong> sera exclus du processus participatif pour les raisons suivantes :"
+      hi: "Estimado usuario,"
+      reconsider_html: "En caso de que la fase de creación de propuestas haya acabado, puedes enviarnos el texto de subsanación o mejora de tu propuesta, en el plazo de 48 horas, al correo preparticipativos@madrid.es, indicando necesariamente para su tramitación el código %{code} como asunto del correo, correspondiente a tu propuesta."
+      sincerely: "Atentamente"
+      signatory: "DIRECCIÓN GENERAL DE PARTICIPACIÓN CIUDADANA"
+      sorry: "Sentimos las molestias ocasionadas y volvemos a darte las gracias por tu inestimable participación."
+      subject: "Tu propuesta de inversión '%{code}' ha sido marcada como inviable"
+      unfeasible_html: "Desde el Ayuntamiento de Madrid queremos agradecer tu participación en los <strong>Presupuestos Participativos de la ciudad de Madrid</strong>. Lamentamos informarte de que tu propuesta <strong>'%{title}'</strong> quedará excluida de este proceso participativo por el siguiente motivo:"
     proposal_notification_digest:
-      info: "Voici les nouvelles notifications publiées par les auteurs de propositions que vous avez soutenues sur %{org_name}."
-      title: "Notifications des propositions sur %{org_name}"
-      share: Partager une proposition
-      comment: Commenter une proposition
-      unsubscribe: "Si vous ne souhaitez pas recevoir les notifications des propositions, rendez-vous sur %{account} et décochez 'Recevoir un résumé des notifications de proposition'."
-      unsubscribe_account: Mon compte
+      info: "A continuación te mostramos las nuevas notificaciones que han publicado los autores de las propuestas que estás apoyando en %{org_name}."
+      title: "Notificaciones de propuestas en %{org_name}"
+      share: Compartir propuesta
+      comment: Comentar propuesta
+      unsubscribe: "Si no quieres recibir notificaciones de propuestas, puedes entrar en %{account} y desmarcar la opción 'Recibir resumen de notificaciones sobre propuestas'."
+      unsubscribe_account: Mi cuenta
     direct_message_for_receiver:
-      subject: "Vous avez un nouveau message privé"
-      reply: Répondre à %{sender}
-      unsubscribe: "Si vous ne souhaitez pas recevoir de messages directs, rendez-vous sur %{account} et décochez 'Recevoir des courriels à propos de messages directs'."
-      unsubscribe_account: Mon compte
+      subject: "Has recibido un nuevo mensaje privado"
+      reply: Responder a %{sender}
+      unsubscribe: "Si no quieres recibir mensajes privados, puedes entrar en %{account} y desmarcar la opción 'Recibir emails con mensajes privados'."
+      unsubscribe_account: Mi cuenta
     direct_message_for_sender:
-      subject: "Vous avez envoyé un nouveau message privé"
-      title_html: "Vous avez envoyé un nouveau message privé à <strong>%{receiver}</strong> avec le contenu suivant :"
+      subject: "Has enviado un nuevo mensaje privado"
+      title_html: "Has enviado un nuevo mensaje privado a <strong>%{receiver}</strong> con el siguiente contenido:"
     user_invite:
-      ignore: "Si vous n'avez pas requis cette invitation, pas d'inquiétude, vous pouvez ignorer ce courriel."
-      text: "Merci d'avoir demandé à rejoindre %{org}! Dans quelques secondes vous pourrez commencer à décider de la Ville que vous souhaitez, remplissez simplement le formulaire ci-dessous :"
-      thanks: "Merci beaucoup."
-      title: "Bienvenue sur %{org}"
-      button: Enregistrement complet
-      subject: "Invitation à %{org_name}"
+      ignore: "Si no has solicitado esta invitación no te preocupes, puedes ignorar este correo."
+      text: "¡Gracias por solicitar unirte a %{org}! En unos segundos podrás empezar a decidir la ciudad que quieres, sólo tienes que rellenar el siguiente formulario:"
+      thanks: "Muchas gracias."
+      title: "Bienvenido a %{org}"
+      button: Completar registro
+      subject: "Invitación a %{org_name}"
     budget_investment_created:
-      subject: "Merci d'avoir créer une proposition !"
-      title: "Merci d'avoir créer une proposition !"
-      intro_html: "Bonjour <strong>%{author}</strong>,"
-      text_html: "Merci d'avoir créer votre proposition <strong>%{investment}</strong> pour un budget participatif <strong>%{budget}</strong>."
-      follow_html: "Nous vous tiendrons informés de l'avancement du processus, que vous pourrez également suivre sur <strong>%{link}</strong>."
-      follow_link: "Budgets participatifs"
-      sincerely: "Cordialement,"
-      signatory: "DÉPARTEMENT DE LA PARTICIPATION CITOYENNE"
-      share: "Partager votre projet"
+      subject: "¡Gracias por crear un proyecto!"
+      title: "¡Gracias por crear un proyecto!"
+      intro_html: "Hola <strong>%{author}</strong>,"
+      text_html: "Muchas gracias por crear tu proyecto <strong>%{investment}</strong> para los Presupuestos Participativos <strong>%{budget}</strong>."
+      follow_html: "Te informaremos de cómo avanza el proceso, que también puedes seguir en la página de <strong>%{link}</strong>."
+      follow_link: "Presupuestos participativos"
+      sincerely: "Atentamente,"
+      signatory: "Área de Participación Ciudadana, Transparencia y Gobierno Abierto del Ayuntamiento de Madrid"
+      share: "Comparte tu proyecto"
     budget_investment_unfeasible:
-      hi: "Cher(e) utilisateur(trice),"
-      new_html: "Pour tout cela, nous vous invitons à élaborer un <strong>nouveau projet de dépenses</strong> qui soit conforme aux conditions de ce processus. Vous pouvez faire cela en allant sur le lien suivant: %{url}."
-      new_href: "nouvelle proposition d'investissement"
-      reconsider_html: "Si vous pensez que le projet rejeté remplit les exigences pour être un projet de dépenses, vous pouvez le communiquer sous 48 heures en répondant à l'adresse examples@consul.es. Incluez le code %{code} dans le sujet de votre courriel."
-      sincerely: "Cordialement"
-      signatory: "DÉPARTEMENT DE LA PARTICIPATION CITOYENNE"
-      sorry: "Désolé du dérangement et nous vous remercions à nouveau pour votre inestimable participation."
-      subject: "Votre proposition d'investissement '%{code}' a été marquée comme infaisable"
-      unfeasible_html: "La Ville souhaite vous remercier pour votre participation aux <strong>budgets participatifs</strong>. Nous avons le regret de vous informer que votre projet <strong>'%{title}'</strong> sera exclus du processus participatif pour les raisons suivantes :"
+      hi: "Estimado usuario,"
+      reconsider_html: "Si consideras que el proyecto rechazado cumple los requisitos para mantenerlo como proyecto de gasto, podrás comunicarlo, en el plazo de 48 horas, al correo preparticipativos@madrid.es, indicando necesariamente para su tramitación el código %{code} como asunto del correo, correspondiente a tu proyecto."
+      sincerely: "Atentamente"
+      signatory: "Área de Participación Ciudadana, Transparencia y Gobierno Abierto del Ayuntamiento de Madrid"
+      sorry: "Sentimos las molestias ocasionadas y volvemos a darte las gracias por tu inestimable participación."
+      subject: "Tu propuesta de inversión '%{code}' ha sido marcada como inviable"
+      unfeasible_html: "Desde el Ayuntamiento queremos agradecer tu participación en los <strong>Presupuestos Participativos</strong>. Lamentamos informarte de que tu proyecto <strong>'%{title}'</strong> quedará excluido de este proceso participativo por el siguiente motivo:"
     budget_investment_selected:
-       subject: "Votre proposition d'investissement '%{code}' a été sélectionnée"
-       hi: "Cher(e) utilisateur(trice),"
-       selected_html: "De la part de la Ville, nous tenons à vous remercier de votre participation aux <strong>propositions participatives</strong>. Nous souhaitons vous informer que votre projet <strong>'%{title}'</strong> a été sélectionné pour la phase de vote finale qui aura lieu du <strong>15 mai au 30 juin</strong>."
-       share: "Pour commencer à recueillir des votes, partager votre projet sur les réseaux sociaux. C'est essentiel pour qu'il devienne réalité."
-       share_button: "Partager votre projet"
-       thanks: "Merci de nouveau pour votre participation."
-       sincerely: "Cordialement,"
-       signatory: "DÉPARTEMENT DE LA PARTICIPATION CITOYENNE"
+      subject: "Tu propuesta de inversión '%{code}' ha sido seleccionada"
+      hi: "Estimado/a usuario/a"
+      selected_html: "Desde el Ayuntamiento de Madrid agradecemos que hayas participado con tu idea en los <strong>Presupuestos Participativos</strong>. Te informamos de que tu proyecto <strong>'%{title}'</strong> ha sido seleccionado y pasa a la fase de votación final que tiene lugar desde el <strong>15 de mayo hasta el 30 de junio de 2017</strong>."
+      share: "Empieza ya a conseguir votos, comparte tu proyecto de gasto en redes sociales. La difusión es fundamental para conseguir que se haga realidad."
+      share_button: "Comparte tu proyecto"
+      thanks: "Gracias de nuevo por tu participación."
+      sincerely: "Atentamente"
+      signatory: "DIRECCIÓN GENERAL DE PARTICIPACIÓN CIUDADANA"
     budget_investment_unselected:
-      subject: "Votre proposition d'investissement '%{code}' n'a été sélectionnée"
-      hi: "Cher(e) utilisateur(trice),"
-      unselected_html: "De la part de la Ville, nous tenons à vous remercier de votre participation aux <strong>propositions participatives</strong>. Nous sommes au regret de vous informer que votre projet <strong>'%{title}'</strong> n'a pas été sélectionné pour la phase de vote finale."
-      participate_html: "Vous pouvez continuer à participer à la phase de vote finale en votant pour d'autres projets du <strong>15 mai au 30 juin</strong>."
-      participate_url: "participer au vote final"
-      thanks: "Merci de nouveau pour votre participation."
-      sincerely: "Cordialement,"
-      signatory: "DÉPARTEMENT DE LA PARTICIPATION CITOYENNE"
+      subject: "Tu propuesta de inversión '%{code}' no ha sido seleccionada"
+      hi: "Estimado/a usuario/a"
+      unselected_html: "Desde el Ayuntamiento de Madrid agradecemos que hayas participado con tu idea en los <strong>Presupuestos Participativos</strong>. Lamentamos informarte de que tu proyecto <strong>'%{title}'</strong> no ha sido seleccionado para la fase de votación final."
+      participate_html: "Puedes continuar participando en la votación final votando proyectos para toda la ciudad y el distrito que elijas desde el <strong>15 de mayo hasta el 30 de junio de 2017.</strong>"
+      participate_url: "participes en la votación final"
+      thanks: "Gracias de nuevo por tu participación."
+      sincerely: "Atentamente"
+      signatory: "DIRECCIÓN GENERAL DE PARTICIPACIÓN CIUDADANA"
