@@ -1,29 +1,30 @@
----
 fr:
   flash:
     actions:
       create:
-        notice: "%{resource_name} créé avec succès."
-        debate: "Débat créé avec succès."
-        direct_message: "Votre message a été envoyé avec succès."
-        poll: "Vote créé avec succès."
-        poll_booth: "Urne créée avec succès."
-        proposal: "Proposition créée avec succès."
-        proposal_notification: "Votre message a correctement été envoyé."
-        spending_proposal: "Proposition de dépense créée avec succès. Vous pouvez y accéder depuis %{activity}"
-        budget_investment: "Budget d'investissement créé avec succès."
-        signature_sheet: "Feuille de signature créée avec succès"
+        notice: "%{resource_name} creado correctamente."
+        debate: "Debate creado correctamente."
+        direct_message: "Tu mensaje ha sido enviado correctamente."
+        poll: "Votación creada correctamente."
+        poll_booth: "Urna creada correctamente."
+        proposal: "Propuesta creada correctamente."
+        proposal_notification: "Tu message ha sido enviado correctamente."
+        representative: "Has actualizado tu representante"
+        spending_proposal: "Propuesta de inversión creada correctamente. Puedes acceder a ella desde %{activity}"
+        budget_investment: "Proyecto de gasto creado correctamente."
+        signature_sheet: "Hoja de firmas creada correctamente"
       save_changes:
-        notice: Modifications sauvegardées
+        notice: Cambios guardados
       update:
-        notice: "%{resource_name} mis-à-jour avec succès."
-        debate: "Débat mis-à-jour avec succès."
-        poll: "Vote mis-à-jour avec succès."
-        poll_booth: "Urne mise-à-jour avec succès."
-        proposal: "Proposition mise-à-jour avec succès."
-        spending_proposal: "Proposition de dépense mise-à-jour avec succès."
-        budget_investment: "Budget d'investissement mis-à-jour avec succès."
+        notice: "%{resource_name} actualizado correctamente."
+        debate: "Debate actualizado correctamente."
+        proposal: "Propuesta actualizada correctamente."
+        poll: "Votación actualizada correctamente."
+        poll_booth: "Urna actualizada correctamente."
+        spending_proposal: "Propuesta de inversión actualizada correctamente."
+        budget_investment: "Proyecto de gasto actualizado correctamente"
       destroy:
-        spending_proposal: "Proposition de dépense supprimée avec succès."
-        budget_investment: "Budget d'investissement supprimé avec succès."
-        error: "Suppression impossible"
+        spending_proposal: "Propuesta de inversión eliminada."
+        representative: "Ya no tienes un representante"
+        budget_investment: "Proyecto de gasto eliminado."
+        error: "No se pudo borrar"
