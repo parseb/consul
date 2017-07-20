@@ -2,193 +2,300 @@ fr:
   activerecord:
     models:
       activity:
-        one: "activité"
-        other: "activités"
+        one: "actividad"
+        other: "actividades"
       budget:
-        one: "Budget participatif"
-        other: "Budgets participatifs"
+        one: "Presupuesto participativo"
+        other: "Presupuestos participativos"
       budget/investment:
-        one: "Projet d'investissement"
-        other: "Projets d'investissement"
+        one: "Proyecto de gasto"
+        other: "Proyectos de gasto"
+      budget/investment/milestone:
+        one: "hito"
+        other: "hitos"
       comment:
-        one: "Commentaire"
-        other: "Commentaires"
+        one: "Comentario"
+        other: "Comentarios"
       debate:
-        one: "Débat"
-        other: "Débats"
+        one: "Debate"
+        other: "Debates"
       tag:
-        one: "Étiquette"
-        other: "Étiquettes"
+        one: "Tema"
+        other: "Temas"
       user:
-        one: "Utilisateur"
-        other: "Utilisateurs"
+        one: "Usuario"
+        other: "Usuarios"
       moderator:
-        one: "Modérateur"
-        other: "Modérateurs"
+        one: "Moderador"
+        other: "Moderadores"
       administrator:
-        one: "Administrateur"
-        other: "Administrateurs"
+        one: "Administrador"
+        other: "Administradores"
       vote:
-        one: "Vote"
-        other: "Votes"
+        one: "Voto"
+        other: "Votos"
       organization:
-        one: "Organisation"
-        other: "Organisations"
+        one: "Organización"
+        other: "Organizaciones"
+      proposal:
+        one: "Propuesta ciudadana"
+        other: "Propuestas ciudadanas"
       poll/booth:
-        one: "bureau de vote"
-        other: "bureaux de vote"
+        one: "urna"
+        other: "urnas"
       poll/officer:
-        one: "président"
-        other: "présidents"
-      proposal:
-        one: "Proposition citoyenne"
-        other: "Propositions citoyennes"
+        one: "presidente de mesa"
+        other: "presidentes de mesa"
       spending_proposal:
-        one: "Proposition d'investissement"
-        other: "Propositions d'investissement"
+        one: "Propuesta de inversión"
+        other: "Propuestas de inversión"
       site_customization/page:
-        one: Page personnalisée
-        other: Pages personnalisées
+        one: Página
+        other: Páginas
       site_customization/image:
-        one: Image personnalisée
-        other: Images personnalisées
+        one: Imagen
+        other: Imágenes
       site_customization/content_block:
-        one: Bloc de contenu personnalisé
-        other: Blocs de contenu personnalisés
+        one: Bloque
+        other: Bloques
+      legislation/process:
+        one: "Proceso"
+        other: "Procesos"
+      legislation/draft_versions:
+        one: "Versión borrador"
+        other: "Versiones borrador"
+      legislation/draft_texts:
+        one: "Borrador"
+        other: "Borradores"
+      legislation/questions:
+        one: "Pregunta"
+        other: "Preguntas"
+      legislation/question_options:
+        one: "Opción de respuesta cerrada"
+        other: "Opciones de respuesta cerrada"
+      legislation/answers:
+        one: "Respuesta"
+        other: "Respuestas"
     attributes:
+      volunteer_poll:
+        email: "Email"
+        first_name: "Nombre"
+        last_name: "Apellidos"
+        document_number: "Número de documento"
+        phone: "Número de teléfono de contacto (preferiblemente móvil)"
+        monday_13_morning: Lunes 13 feb mañana
+        monday_13_afternoon: Lunes 13 feb tarde
+        tuesday_14_morning: Martes 14 feb mañana
+        tuesday_14_afternoon: Martes 14 feb tarde
+        wednesday_15_morning: Miércoles 15 feb mañana
+        wednesday_15_afternoon: Miércoles 15 feb tarde
+        thursday_16_morning: Jueves 16 feb mañana
+        thursday_16_afternoon: Jueves 16 feb tarde
+        friday_17_morning: Viernes 17 feb mañana
+        friday_17_afternoon: Viernes 17 feb tarde
+        saturday_18_morning: Sábado 18 feb mañana
+        saturday_18_afternoon: Sábado 18 feb tarde
+        sunday_19_morning: Domingo 19 feb mañana
+        sunday_19_afternoon: Domingo 19 feb tarde
+        monday_20_morning: Lunes 20 feb mañana
+        monday_20_afternoon: Lunes 20 feb tarde
+        turns: "turnos"
+        any_district: "En cualquier distrito"
+        arganzuela: "Arganzuela"
+        barajas: "Barajas"
+        carabanchel: "Carabanchel"
+        centro: "Centro"
+        chamartin: "Chamartín"
+        chamberi: "Chamberí"
+        ciudad_lineal: "Ciudad Lineal"
+        fuencarral_el_pardo: "Fuencarral-El Pardo"
+        hortaleza: "Hortaleza"
+        latina: "Latina"
+        moncloa_aravaca: "Moncola-Aravaca"
+        moratalaz: "Moratalaz"
+        puente_de_vallecas: "Puente de Vallecas"
+        retiro: "Retiro"
+        salamanca: "Salamanca"
+        san_blas_canillejas: "San Blas Canillejas"
+        tetuan: "Tetuán"
+        usera: "Usera"
+        vicalvaro: "Vicálvaro"
+        villa_de_vallecas: "Villa de Vallecas"
+        villaverde: "Villaverde"
+      budget_poll:
+        name: "Nomre y apellidos"
+        email: "Email (opcional)"
+        preferred_subject: "Tema preferido"
+        collective: "Colectivo"
+        public_worker: "Empleado público"
+        proposal_author: "Autor de propuesta"
+        selected_proposal_author: "Autor de propuesta seleccionado"
+        help: "Quiero ayudar"
       budget:
-        name: "Nom"
-        description_accepting: "Description durant la phase d'acceptation"
-        description_reviewing: "Description durant la phase de revue"
-        description_selecting: "Description durant la phase de sélection"
-        description_valuating: "Description durant la phase d'évaluation"
-        description_balloting: "Description durant la phase de vote"
-        description_reviewing_ballots: "Description durant la phase de revue des votes"
-        description_finished: "Description quand le budget est finalisé"
-        phase: "Phase"
-        currency_symbol: "Devise"
+        name: "Nombre"
+        description_accepting: "Descripción durante la fase de presentación de proyectos"
+        description_reviewing: "Descripción durante la fase de revisión interna"
+        description_selecting: "Descripción durante la fase de apoyos"
+        description_valuating: "Descripción durante la fase de evaluación"
+        description_balloting: "Descripción durante la fase de votación"
+        description_reviewing_ballots: "Descripción durante la fase de revisión de votos"
+        description_finished: "Descripción cuando el presupuesto ha finalizado / Resultados"
+        phase: "Fase"
+        currency_symbol: "Divisa"
       budget/investment:
-        heading_id: "Rubrique du budget"
-        title: "Titre"
-        description: "Description"
-        external_url: "Lien externe"
-        location: "Lieu"
-        administrator_id: "Administrateur"
-        description: "Description"
-        external_url: "Lien vers la documentation complémentaire"
-        heading_id: "Rubrique du budget"
-        title: "Titre"
-        location: "Lieu"
-        organization_name: "Si votre proposition concerne un collectif ou une organisation, renseignez leur nom"
+        administrator_id: "Administrador"
+        description: "Descripción"
+        external_url: "Enlace a documentación adicional"
+        heading_id: "¿Tu proyecto es para toda la ciudad o está ubicado en un distrito en concreto?"
+        title: "Título"
+        location: "Ubicación (opcional)"
+        organization_name: "Si estás proponiendo en nombre de una organización o colectivo, escribe su nombre"
       comment:
-        body: "Commentaire"
-        user: "Utilisateur"
+        body: "Comentario"
+        user: "Usuario"
+      budget/investment/milestone:
+        title: "Título"
+        description: "Descripción"
       debate:
-        author: "Auteur"
-        description: "Opinion"
-        terms_of_service: "Conditions d'utilisation"
-        title: "Titre"
+        author: "Autor"
+        description: "Opinión"
+        terms_of_service: "Términos de servicio"
+        title: "Título"
       proposal:
-        author: "Auteur"
-        title: "Titre"
-        question: "Question"
-        description: "Description"
-        terms_of_service: "Conditions d'utilisation"
+        author: "Autor"
+        title: "Título"
+        question: "Pregunta"
+        description: "Descripción"
+        terms_of_service: "Términos de servicio"
       user:
-        email: "Courriel"
-        username: "Nom d'utilisateur"
-        password_confirmation: "Confirmation du mot de passe"
-        password: "Mot de passe"
-        current_password: "Mot de passe actuel"
-        phone_number: "Téléphone"
-        official_position: "Position officielle"
-        official_level: "Niveau officiel"
-        redeemable_code: "Vérification du code reçu par courriel"
+        login: Email o nombre de usuario
+        email: "Correo electrónico"
+        username: "Nombre de usuario"
+        password_confirmation: "Confirmación de contraseña"
+        password: "Contraseña"
+        current_password: "Contraseña actual"
+        phone_number: "Teléfono"
+        official_position: "Cargo público"
+        official_level: "Nivel del cargo"
+        redeemable_code: "Código de verificación por carta (opcional)"
       organization:
-        name: "Nom de l'organisation"
-        responsible_name: "Personne responsable pour le groupe"
+        name: "Nombre de organización"
+        responsible_name: "Persona responsable del colectivo"
       spending_proposal:
-        administrator_id: "Administrateur"
-        association_name: "Nom de l'association"
-        description: "Description"
-        external_url: "Lien vers la documentation complémentaire"
-        geozone_id: "Périmètre de l'opération"
-        title: "Titre"
+        administrator_id: "Administrador"
+        association_name: "Nombre de la asociación"
+        description: "Descripción"
+        external_url: "Enlace a documentación adicional"
+        geozone_id: "Ámbito de actuación"
+        title: "Título"
       poll:
-        name: "Nom"
-        starts_at: "Date de début"
-        ends_at: "Date de fin"
-        geozone_restricted: "Restreint selon la zone géographique"
+        name: "Nombre"
+        starts_at: "Fecha de apertura"
+        ends_at: "Fecha de cierre"
+        geozone_restricted: "Restringida por zonas"
       poll/question:
-        title: "Question"
-        valid_answers: "Réponses possibles"
-        summary: "Résumé"
-        description: "Description"
-        external_url: "Lien vers la documentation complémentaire"
+        title: "Pregunta"
+        valid_answers: "Posibles respuestas"
+        summary: "Resumen"
+        description: "Descripción"
+        external_url: "Enlace a documentación adicional"
       signature_sheet:
-        signable_type: "Type de signature"
-        signable_id: "Identifiant de la signature"
-        document_numbers: "Nombre de documents"
+        signable_type: "Tipo de hoja de firmas"
+        signable_id: "ID Propuesta ciudadana/Propuesta inversión"
+        document_numbers: "Números de documentos"
       site_customization/page:
-        content: Contenu
-        created_at: Créé le
-        subtitle: Sous-titres
+        content: Contenido
+        created_at: Creada
+        subtitle: Subtítulo
         slug: Slug
-        status: Statut
-        title: Titre
-        updated_at: Mis-à-jour le
-        more_info_flag: Montrer dans la page Plus d'informations
-        print_content_flag: Bouton impression du contenu
-        locale: Langue
+        status: Estado
+        title: Título
+        updated_at: última actualización
+        more_info_flag: Mostrar en la página de más información
+        print_content_flag: Botón de imprimir contenido
+        locale: Idioma
       site_customization/image:
-        name: Nom
-        image: Image
+        name: Nombre
+        image: Imagen
       site_customization/content_block:
-        name: Nom
-        locale: Langue
-        body: Contenu
+        name: Nombre
+        locale: Idioma
+        body: Contenido
+      legislation/process:
+        title: Título del proceso
+        description: En qué consiste
+        additional_info: Información adicional
+        start_date: Fecha de inicio del proceso
+        end_date: Fecha de fin del proceso
+        debate_start_date: Fecha de inicio del debate
+        debate_end_date: Fecha de fin del debate
+        draft_publication_date: Fecha de publicación del borrador
+        allegations_start_date: Fecha de inicio de alegaciones
+        allegations_end_date: Fecha de fin de alegaciones
+        result_publication_date: Fecha de publicación del resultado final
+      legislation/draft_version:
+        title: Título de la version
+        body: Texto
+        changelog: Cambios
+        status: Estado
+        final_version: Versión final
+      legislation/question:
+        title: Título
+        question_options: Respuestas
+      legislation/question_option:
+        value: Valor
+      legislation/annotation:
+        text: Comentario
     errors:
       models:
         user:
           attributes:
             email:
-              password_already_set: "Cet utilisateur a déjà un mot de passe"
+              password_already_set: "Este usuario ya tiene una clave asociada"
         debate:
           attributes:
             tag_list:
-              less_than_or_equal_to: "Le nombre d'étiquettes doit être inférieur ou égal à %{count}"
+              less_than_or_equal_to: "los temas deben ser menor o igual que %{count}"
         direct_message:
           attributes:
             max_per_day:
-              invalid: "Vous avez atteint le nombre maximum de message privés par jour"
+              invalid: "Has llegado al número máximo de mensajes privados por día"
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Ce document n'est pas dans le recensement"
-              has_voted: "L'utilisateur a déjà voté"
+              not_in_census: "Este documento no aparece en el censo"
+              has_voted: "Este usuario ya ha votado"
+        legislation/process:
+          attributes:
+            end_date:
+              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio
+            debate_end_date:
+              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio del debate
+            allegations_end_date:
+              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio de las alegaciones
         proposal:
           attributes:
             tag_list:
-              less_than_or_equal_to: "Le nombre d'étiquettes doit être inférieur ou égal à %{count}"
+              less_than_or_equal_to: "los temas deben ser menor o igual que %{count}"
         budget/investment:
           attributes:
             tag_list:
-              less_than_or_equal_to: "Le nombre d'étiquettes doit être inférieur ou égal à %{count}"
+              less_than_or_equal_to: "los temas deben ser menor o igual que %{count}"
         proposal_notification:
           attributes:
             minimum_interval:
-              invalid: "Vous devez attendre un minimum de %{interval} jours entre les avis de proposition"
+              invalid: "Debes esperar un mínimo de %{interval} días entre notificaciones"
         signature:
           attributes:
             document_number:
-              not_in_census: 'Non vérifié par recensement'
-              already_voted: 'Cette proposition a déjà été votée'
+              not_in_census: 'No verificado por Padrón'
+              already_voted: 'Ya ha votado esta propuesta'
         site_customization/page:
           attributes:
             slug:
-              slug_format: "doit être des lettres, des nombres, _ et -"
+              slug_format: "deber ser letras, números, _ y -"
         site_customization/image:
           attributes:
             image:
-              image_width: "La largeur doit être de %{required_width}px"
-              image_height: "La hauteur doit être de %{required_height}px"
+              image_width: "Debe tener %{required_width}px de ancho"
+              image_height: "Debe tener %{required_height}px de alto"
