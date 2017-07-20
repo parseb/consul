@@ -1,78 +1,77 @@
----
 fr:
   moderation:
     header:
-      title: Modération
+      title: Moderación
     comments:
       index:
-        block_authors: Bloquer un auteur
-        confirm: "Êtes-vous sûr(e) ?"
-        filter: Filtrer
+        block_authors: Bloquear autores
+        confirm: "¿Estás seguro?"
+        filter: Filtrar
         filters:
-          all: Tous
-          pending_flag_review: En attente
-          with_ignored_flag: Marqué comme vu
+          all: Todos
+          pending_flag_review: Pendientes
+          with_ignored_flag: Marcados como revisados
         headers:
-          comment: Commentaire
-          moderate: Modérer
-        hide_comments: Masquer les commentaires
-        ignore_flags: Marqué comme vu
-        order: Ordre
+          comment: Comentario
+          moderate: Moderar
+        hide_comments: Ocultar comentarios
+        ignore_flags: Marcar como revisados
+        order: Orden
         orders:
-          flags: Les plus signalés
-          newest: Les plus récents
-        title: Commentaires
+          flags: Más denunciados
+          newest: Más nuevos
+        title: Comentarios
     dashboard:
       index:
-        title: Modération
+        title: Moderación
     debates:
       index:
-        block_authors: Bloquer un auteur
-        confirm: "Êtes-vous sûr(e) ?"
-        filter: Filtrer
+        block_authors: Bloquear autores
+        confirm: "¿Estás seguro?"
+        filter: Filtrar
         filters:
-          all: Tous
-          pending_flag_review: En attente
-          with_ignored_flag: Marqué comme vu
+          all: Todos
+          pending_flag_review: Pendientes
+          with_ignored_flag: Marcados como revisados
         headers:
-          debate: Débat
-          moderate: Modérer
-        hide_debates: Masquer les débats
-        ignore_flags: Marqué comme vu
-        order: Ordre
+          debate: Debate
+          moderate: Moderar
+        hide_debates: Ocultar debates
+        ignore_flags: Marcar como revisados
+        order: Orden
         orders:
-          created_at: Les plus récents
-          flags: Les plus signalés
-        title: Débats
+          created_at: Más nuevos
+          flags: Más denunciados
+        title: Debates
     menu:
-      flagged_comments: Commentaires
-      flagged_debates: Débats
-      proposals: Propositions
-      users: Bloquer les utilisateurs
+      flagged_comments: Comentarios
+      flagged_debates: Debates
+      proposals: Propuestas
+      users: Bloquear usuarios
     proposals:
       index:
-        block_authors: Bloquer un auteur
-        confirm: "Êtes-vous sûr(e) ?"
-        filter: Filtrer
+        block_authors: Bloquear autores
+        confirm: "¿Estás seguro?"
+        filter: Filtro
         filters:
-          all: Tous
-          pending_flag_review: En attente de revue
-          with_ignored_flag: Marqué comme vu
+          all: Todas
+          pending_flag_review: Pendientes de revisión
+          with_ignored_flag: Marcadas como revisadas
         headers:
-          moderate: Modérer
-          proposal: Proposition
-        hide_proposals: Masquer les propositions
-        ignore_flags: Marqué comme vu
-        order: Trier par
+          moderate: Moderar
+          proposal: Propuesta
+        hide_proposals: Ocultar Propuestas
+        ignore_flags: Marcar como revisadas
+        order: Ordenar por
         orders:
-          created_at: Les plus récents
-          flags: Les plus signalés
-        title: Propositions
+          created_at: Más recientes
+          flags: Más denunciadas
+        title: Propuestas
     users:
       index:
-        hidden: Bloqué
-        hide: Bloquer
-        search: Rechercher
-        search_placeholder: courriel ou nom de l'utilisateur
-        title: Bloquer les utilisateurs
-      notice_hide: Utilisateur bloqué. Tous les débats et les propositions de cet utilisateur ont été masqués.
+        hidden: Bloqueado
+        hide: Bloquear
+        search: Buscar
+        search_placeholder: email o nombre de usuario
+        title: Bloquear usuarios
+      notice_hide: Usuario bloqueado. Se han ocultado todos sus debates y comentarios.
