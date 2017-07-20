@@ -1,161 +1,142 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 fr:
   date:
     abbr_day_names:
-    - dim
-    - lun
-    - mar
-    - mer
-    - jeu
-    - ven
-    - sam
+      - dom
+      - lun
+      - mar
+      - mié
+      - jue
+      - vie
+      - sáb
     abbr_month_names:
-    - jan
-    - fév
-    - mar
-    - avr
-    - mai
-    - jun
-    - jul
-    - aoû
-    - sep
-    - oct
-    - nov
-    - déc
+      - [ ]
+      - ene
+      - feb
+      - mar
+      - abr
+      - may
+      - jun
+      - jul
+      - ago
+      - sep
+      - oct
+      - nov
+      - dic
     day_names:
-    - dimanche
-    - lundi
-    - mardi
-    - mercredi
-    - jeudi
-    - vendredi
-    - samedi
+      - domingo
+      - lunes
+      - martes
+      - miércoles
+      - jueves
+      - viernes
+      - sábado
     formats:
       default: "%d/%m/%Y"
-      long: "%d %B %Y"
-      short: "%d %b"
+      long: "%d de %B de %Y"
+      short: "%d de %b"
     month_names:
-    - janvier
-    - février
-    - mars
-    - avril
-    - mai
-    - juin
-    - juillet
-    - août
-    - septembre
-    - octobre
-    - novembre
-    - décembre
+      - [ ]
+      - enero
+      - febrero
+      - marzo
+      - abril
+      - mayo
+      - junio
+      - julio
+      - agosto
+      - septiembre
+      - octubre
+      - noviembre
+      - diciembre
     order:
-    - :jour
-    - :mois
-    - :année
+      - :day
+      - :month
+      - :year
   datetime:
     distance_in_words:
       about_x_hours:
-        one: environ 1 heure
-        other: environ %{count} heures
+        one: alrededor de 1 hora
+        other: alrededor de %{count} horas
       about_x_months:
-        one: environ 1 mois
-        other: environ %{count} mois
+        one: alrededor de 1 mes
+        other: alrededor de %{count} meses
       about_x_years:
-        one: environ 1 an
-        other: environ %{count} ans
+        one: alrededor de 1 año
+        other: alrededor de %{count} años
       almost_x_years:
-        one: presque 1 an
-        other: presque %{count} ans
-      half_a_minute: demi-minute
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
       less_than_x_minutes:
-        one: moins d'1 minute
-        other: moins de %{count} minutes
+        one: menos de 1 minuto
+        other: menos de %{count} minutos
       less_than_x_seconds:
-        one: moins d'1 seconde
-        other: moins de %{count} secondes
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
       over_x_years:
-        one: plus d'1 an
-        other: plus de %{count} ans
+        one: más de 1 año
+        other: más de %{count} años
       x_days:
-        one: 1 jour
-        other: "%{count} jours"
+        one: 1 día
+        other: "%{count} días"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
+        one: 1 minuto
+        other: "%{count} minutos"
       x_months:
-        one: 1 mois
-        other: "%{count} mois"
+        one: 1 mes
+        other: "%{count} meses"
       x_seconds:
-        one: 1 seconde
-        other: "%{count} secondes"
+        one: 1 segundo
+        other: "%{count} segundos"
     prompts:
-      day: Jour
-      hour: Heure
-      minute: Minutes
-      month: Mois
-      second: Secondes
-      year: Année
+      day: Día
+      hour: Hora
+      minute: Minutos
+      month: Mes
+      second: Segundos
+      year: Año
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: doit être accepté
-      blank: ne peut pas être vide
-      present: doit être vide
-      confirmation: ne coïncide pas
-      empty: ne peut pas être vide
-      equal_to: doit être égal à %{count}
-      even: doit être pair
-      exclusion: est réservé
-      greater_than: doit être plus grand que %{count}
-      greater_than_or_equal_to: doit être plus grand que ou égal à %{count}
-      inclusion: n'est pas inclus dans la liste
-      invalid: n'est pas valide
-      less_than: doit être plus petit que %{count}
-      less_than_or_equal_to: doit être plus petit que ou égal à %{count}
-      not_a_number: n'est pas un nombre
-      not_an_integer: doit être un nombre entier
-      odd: doit être impair
-      record_invalid: 'La validation a échoué: %{errors}'
+      accepted: debe ser aceptado
+      blank: no puede estar en blanco
+      present: debe estar en blanco
+      confirmation: no coincide
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser par
+      exclusion: está reservado
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor que o igual a %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor que o igual a %{count}
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser impar
+      record_invalid: 'La validación falló: %{errors}'
       restrict_dependent_destroy:
-        one: Impossible de supprimer l'enregistrement car il existe un %{record} dépendant
-        many: Impossible de supprimer l'enregistrement car il existe des %{record} dépendants
-      taken: est déjà utilisé
-      too_long: est trop long (%{count} caractères maximum)
-      too_short: est trop court (%{count} caractères minimum)
-      wrong_length: n'a pas la bonne longueur (%{count} caractères attendus)
-      other_than: doit être différent de %{count}
-      invalid_date: "n'est pas une date valide"
+        one: No se puede eliminar el registro porque existe un %{record} dependiente
+        many: No se puede eliminar el registro porque existen %{record} dependientes
+      taken: ya está en uso
+      too_long: es demasiado largo (%{count} caracteres máximo)
+      too_short: es demasiado corto (%{count} caracteres mínimo)
+      wrong_length: no tiene la longitud correcta (%{count} caracteres exactos)
+      other_than: debe ser distinto de %{count}
+      invalid_date: "no es una fecha valida"
     template:
-      body: 'Des problèmes ont été trouvés avec les champs suivants :'
+      body: 'Se encontraron problemas con los siguientes campos:'
       header:
-        one: Impossible d'enregistrer ce/cette %{model} car 1 erreur a été trouvée
-        other: Impossible d'enregistrer ce/cette %{model} car %{count} erreurs ont été trouvées
+        one: No se pudo guardar este/a %{model} porque se encontró 1 error
+        other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
   helpers:
     select:
-      prompt: Veuillez sélectionner
+      prompt: Por favor seleccione
     submit:
-      create: Créer %{model}
-      submit: Enregistrer %{model}
-      update: Actualiser %{model}
+      create: Crear %{model}
+      submit: Guardar %{model}
+      update: Actualizar %{model}
   number:
     currency:
       format:
@@ -176,11 +157,11 @@ fr:
       decimal_units:
         format: "%n %u"
         units:
-          billion: milliard
-          million: million
-          quadrillion: quadrillion
-          thousand: mille
-          trillion: trillion
+          billion: mil millones
+          million: millón
+          quadrillion: mil billones
+          thousand: mil
+          trillion: billón
           unit: ''
       format:
         delimiter: ''
@@ -191,12 +172,12 @@ fr:
         format: "%n %u"
         units:
           byte:
-            one: octet
-            other: octets
-          gb: GO
-          kb: KO
-          mb: MO
-          tb: TO
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
     percentage:
       format:
         delimiter: ''
@@ -205,14 +186,15 @@ fr:
         delimiter: ''
   support:
     array:
-      last_word_connector: " et "
-      two_words_connector: " et "
+      last_word_connector: " y "
+      two_words_connector: " y "
       words_connector: ", "
   time:
-    am: du matin
+    am: am
     formats:
-      default: "%A, %d %B %Y %H:%M:%S %z"
-      long: "%d %B %Y %H:%M"
-      short: "%d %b %H:%M"
+      default: "%A, %d de %B de %Y %H:%M:%S %z"
+      long: "%d de %B de %Y %H:%M"
+      short: "%d de %b %H:%M"
       datetime: "%d/%m/%Y %H:%M:%S"
-    pm: "de l'après-midi"
+      api: "%d-%m-%Y %H"
+    pm: pm
