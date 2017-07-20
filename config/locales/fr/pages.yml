@@ -1,80 +1,184 @@
----
 fr:
   pages:
-    census_terms: Pour confirmer ce compte, vous devez être âgé(e) de 16 ans ou plus, et avoir été recensé avec les données indiquées ci-dessus, lesquelles seront vérifiées. En acceptant le processus de vérification, vous donnez également votre consentement au recoupement de cette information, ainsi que les moyens de communication qui figurent dans ce fichier. Les données fournies seront intégrées et traitées dans le fichier indiqué dans les conditions d'utilisations du portail.
-    conditions: Conditions d'utilisation
-    general_terms: Conditions générales
+    census_terms: Para verificar la cuenta hay que tener 16 años o más y estar empadronado en Madrid aportando los datos indicados anteriormente, los cuales serán contrastados por la Dirección General de Participación Ciudadana con los ficheros 'Padrón Municipal de Habitantes' cuyo responsable es la Dirección General de Economía y Sector Público y 'Servicios Atención al Ciudadano' cuyo responsable es la Dirección General de Transparencia y Atención a la Ciudadanía. Aceptando el proceso de verificación acepta dar su consentimiento para contrastar dicha información, así como medios de contacto que figuren en dichos ficheros. Los datos aportados serán incorporados y tratados por la Dirección General de Participación Ciudadana en el fichero 'Gestión de Procesos Participativos' indicado anteriormente en las condiciones de uso del portal.
+    conditions: Condiciones de uso
+    general_terms: Términos y Condiciones
+    help_translate:
+      title: '¡Ayúdanos a traducir!'
+      text: |-
+        Si hablas otros idiomas por favor ayúdanos a que esta web y el software que utiliza esté disponible en otros idiomas.
+        
+        Escríbenos a ag.gobiernoabierto@madrid.es para que te demos acceso al sistema de traducción colaborativo.
+        Todos juntos conseguiremos que cualquier país pueda disfrutar de esta herramienta. ¡Un millón de gracias!
     more_info:
-      title: "Découvrez %{org_name}"
-      subtitle: "Découvrez tout ce qu'il est possible de faire avec ce site"
-      guide: "Ce guide explique chaque section de %{org_name}. Vous pouvez avoir plus d'information dans les liens 'Informations détaillées'."
+      title: "Descubre %{org_name}"
+      subtitle: "Aprende todo lo que puedes hacer en esta web."
+      guide: 'Esta guía explica cada una de las secciones de %{org_name}. Puedes ampliar la información en los enlaces de "Información detallada".'
       menu:
-        debates: "Débats"
-        proposals: "Propositions"
-        budgets: "Budgets participatifs"
-        other: "Autre information utile"
+        debates: "Debates"
+        proposals: "Propuestas"
+        budgets: "Presupuestos participativos"
+        polls: "Votaciones"
+        other: "Otra información de interés"
       debates:
-        title: "Débats"
-        description: "Créer un fil de discussion où vous pouvez aborder tous sujets que vous souhaitez partager avec d'autres personnes de votre ville."
-        feature_1: "Pour créer un débat, vous devez %{link}"
-        feature_1_link: "vous inscrire sur %{org_name}"
-        feature_2_html: "Les débats peuvent être notés en utilisant les boutons <strong>Je suis d'accord</strong> ou <strong>Je ne suis pas d'accord</strong> que vous trouverez dans chacun d'eux."
-        image_alt: "Boutons pour noter les débats"
-        figcaption: "Les boutons 'Je suis d'accord' et 'Je ne suis pas d'accord' pour noter les débats."
+        title: "Debates"
+        description: "Crea un hilo en el que debatir sobre cualquier tema que quieras compartir con el resto de gente de tu ciudad."
+        feature_1: "Para crear un debate tienes que %{link}"
+        feature_1_link: "registrarte en %{org_name}"
+        feature_2_html: "Los debates pueden ser valorados utilizando los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong> que encontrarás en cada uno de ellos."
+        image_alt: "Botones para valorar los debates"
+        figcaption: 'Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar los debates.'
       proposals:
-        title: "Propositions"
-        description: "Faites une proposition sur ce que vous souhaitez que la mairie entreprenne et soutenez les propositions d'autres personnes."
-        feature_1: "Pour créer une proposition, vous devez %{link}. De plus, pour les supporter, vous devez avoir un compte vérifié."
-        feature_1_link: "inscrivez-vous sur %{org_name}"
-        feature_2_html: "Les propositions qui auront <strong>le support d'1% des personnes</strong> seront soumises au vote."
-        feature_3_html: "S'il y a plus de personnes qui sont en faveur que contre, <strong>la mairie publiera son plan pour accomplir</strong> cette proposition et vous pourrez suivre son avancement."
-        image_alt: "Bouton pour supporter une proposition"
-        figcaption_html: 'Bouton pour "Supporter" une proposition.<br>Quand le nombre de supports requis est atteint, elle sera soumise au vote.'
+        title: "Propuestas"
+        detail: "Información detallada de propuestas"
+        description: "Propón lo que quieres que el Ayuntamiento lleve a cabo y apoya propuestas de otras personas."
+        feature_1: "Para crear una propuesta tienes que %{link}, además para apoyarlas debes verificar tu cuenta."
+        feature_1_link: "registrarte en %{org_name}"
+        feature_2_html: "Las propuestas que consigan <strong>el apoyo del 1% de la gente</strong> (mayor de 16 años empadronada en Madrid; 27.064 apoyos) pasan a votación."
+        feature_3_html: "Si hay más gente a favor que en contra en la votación, <strong>el Ayuntamiento asume la propuesta y se hace</strong>."
+        image_alt: "Botón para apoyar una propuesta"
+        figcaption_html: 'Botón para "Apoyar" una propuesta.<br>Cuando alcance el número de apoyos pasará a votación.'
       budgets:
-        title: "Budgets participatifs"
-        description: "Les premiers six mois de chaque année, vous pouvez décider comment investir une partie du budget."
-        feature_1: "Pour soumettre un projet d'investissement, vous devez %{link} et avoir un compte vérifié."
-        feature_1_link: "inscrivez-vous sur %{org_name}"
-        feature_2_html: "En premier, il y a la <strong>phase de soumission</strong> des projets d'investissement."
-        feature_3_html: "Ensuite, il y a la <strong>phase de support</strong> pour prioriser les projets les plus intéressants. Ceux avec le plus de support seront évalués par la Ville pour établir s'ils sont viables et combien ils valent."
-        feature_4_html: "Enfin, il y a la <strong>phase de vote</strong> où vous décidez des projets pour lesquels dépenser le budget."
-        image_alt: "Différentes phases d'un budget participatif"
-        figcaption_html: '"Phase de support" et "phase de vote" des budgets participatifs.'
+        title: "Presupuestos participativos"
+        detail: "Información detallada de presupuestos"
+        description: "Los primeros seis meses de cada año puedes decidir cómo gastar parte del presupuesto."
+        feature_1: "Para crear un proyecto de gasto tienes que %{link} y verificar tu cuenta."
+        feature_1_link: "registrarte en %{org_name}"
+        feature_2_html: "En primer lugar empieza la <strong>fase de aceptación</strong> de proyectos de gasto."
+        feature_3_html: "Después hay una <strong>fase de apoyos</strong> para priorizar lo más interesante, las más apoyadas son evaluadas por el Ayuntamiento para ver si son viables y cuánto valen."
+        feature_4_html: "Al final hay una <strong>fase de votación</strong> donde se decide en cuáles se gasta esa parte del presupuesto."
+        image_alt: "Diferentes fases de un presupuesto participativo"
+        figcaption_html: 'Fase de "Apoyos" y fase de "Votación" de los presupuestos participativos.'
       polls:
-        title: "Votes"
-        description: "Les propositions des citoyens ayant atteint un support de 1% seront soumises au vote."
-        feature_1: "Pour participer au prochain vote, vous devez %{link} et avoir un compte vérifié."
-        feature_1_link: "inscrivez-vous sur %{org_name}"
-        feature_2: "Tous les utilisateurs vérifiés âgés de 16 ans ou plus peuvent voter."
-        feature_3: "Les résultats de tous les votes sont contractuels pour le gouvernement."
+        title: "Votaciones"
+        detail: "Información detallada de Votaciones"
+        description: "Las propuestas ciudadanas que alcancen el 1% de apoyos pasarán a votación."
+        feature_1: "Para participar en la próxima votación tienes que %{link} y verificar tu cuenta."
+        feature_1_link: "registrarte en %{org_name}"
+        feature_2: "Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años."
+        feature_3: "Los resultados de todas las votaciones serán vinculantes para el gobierno."
+        image_alt: "Primera votación ciudadana"
+        figcaption: "Imagen de campaña de la Primera Votación Ciudadana en febrero de 2017."
       faq:
-        title: "Problèmes techniques ?"
-        description: "Lisez la FAQ et trouvez la réponse à vos questions."
-        button: "Voir les questions fréquemment posées"
+        title: "¿Problemas técnicos?"
+        description: "Lee las preguntas frecuentes y resuelve tus dudas."
+        button: "Ver preguntas frecuentes"
       other:
-        how_to_use: "Utiliser %{org_name} dans votre ville"
-        world: "Participation citoyenne dans le monde"
-        facts: "Éléments sur la participation citoyenne et la démocratie directe"
+        title: "Otra información de interés"
+        how_to_use: "Utiliza %{org_name} en tu municipio"
+        world: "Participación ciudadana directa en el mundo"
+        facts: "Hechos sobre participación ciudadana y democracia directa"
+        forums: "Foros Locales"
       how_to_use:
         text: |-
-          Utilisez le librement pour votre gouvernement ou aider nous à l'améliorer, c'est un logiciel libre.
-
-          Ce portail de Gouvernement Ouvert utilise l'[application Consul](https://github.com/ayuntamientomadrid 'consul github') qui est un logiciel libre, sous [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), ce qui, en quelques mots, signifie que tout le monde peut utiliser le code librement, le copier, le voir en détail, le modifier et le redistribuer avec ces modifications (permettant à d'autres d'en faire de même). Car nous pensons que la culture est meilleure et plus riche quand elle est libre.
-
-          Si vous êtes un développeur, vous pouvez voir le code et nous aider à l'améliorer en allant sur l'[applicationConsul](https://github.com/ayuntamientomadrid 'consul github').
+          Utilízalo en tu municipio libremente o ayúdanos a mejorarlo, es software libre.
+          
+          Este Portal de Gobierno Abierto usa la [aplicación Consul](https://github.com/consul/consul 'github consul' ) que es software libre, con [licencia AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), esto significa en palabras sencillas, que cualquiera puede libremente usar el código, copiarlo, verlo en detalle, modificarlo, y redistribuirlo al mundo con las modificaciones que quiera (manteniendo el que otros puedan a su vez hacer lo mismo). Porque creemos que la cultura es mejor y más rica cuando se libera.
+          
+          No sólo puedes utilizar libremente este portal en tu municipio, sino que desde el Ayuntamiento de Madrid vamos a ayudarte todo lo posible a que lo hagas, así que si estás interesado, escríbenos <a href='mailto:extension.institucional@madrid.es'>un correo electrónico</a>.
+          
+          Si eres programador, puedes ver el código y ayudarnos a mejorarlo en [aplicación Consul](https://github.com/consul/consul 'github consul' ).
       titles:
-        how_to_use: Utilisez-le pour votre gouvernement
-    privacy: Politique de confidentialité
+        how_to_use: Utilízalo en tu municipio
+        meetings: Espacios presenciales de debate y propuesta
+    privacy: Política de Privacidad
+    processes:
+      back: Volver
+      index:
+        featured: Destacado
+        process_1_title: Ordenanza de Transparencia
+        process_1_description: Madrid quiere poner en marcha un sistema de transparencia pública a la altura de los más avanzados del mundo.
+        process_1_button: Más información sobre la Ordenanza
+        process_2_title: Remodelación de Plaza España
+        process_2_description_close: La preselección ciudadana de los proyectos ha terminado. Ya puedes ver los resultados.
+        process_2_button: Ver resultados
+        process_3_title: "Pleno Abierto"
+        process_3_description: Apoya las propuestas y preguntas enviadas. Las cinco más votadas serán formuladas en persona a los grupos políticos en el Pleno Abierto del 24 de abril.
+        process_3_button: Ver propuestas y preguntas
+        process_5_title: Plan de Derechos Humanos
+        process_5_description: El Ayuntamiento de Madrid quiere reforzar su compromiso con los Derechos Humanos con la elaboración de un Plan para el desarrollo de sus políticas públicas.
+        process_5_title_voting: Plan de Derechos Humanos
+        process_5_description_voting_html: "Hasta el 4 de noviembre los ciudadanos priorizaron las medidas y comentaron el borrador del Plan de Derechos Humanos."
+        process_5_button_voting: Más información
+        process_6_title: Cartas de Servicios
+        process_6_description: Puedes dejar tus comentarios en las Cartas de Servicios de los servicios de Ayuda a Domicilio, de los Centros de Día, de Centros Municipales de Mayores y de Teleasistencia Domiciliaria.
+        process_6_button: Ver resultados de participación
+        process_7_title: 'Urbanismo: nuevos bancos'
+        process_7_description: Los ciudadanos eligieron el nuevo diseño de bancos para sentarse que les gustaría que se instalasen en la ciudad.
+        process_7_button: Ver resultados de la votación
+        process_8_title: "Licencias urbanísticas, declaraciones responsables y comunicaciones previas"
+        process_8_description: Consulta previa sobre la regulación de la concesión de licencias urbanísticas para la realización de obras y la apertura de locales comerciales o empresariales.
+        process_8_button: "Más información"
+        process_9_title: "Alianza para el Gobierno Abierto"
+        process_9_description: "Esta organización compuesta por gobiernos y sociedad civil, ayuda a que los gobiernos desarrollen medidas relevantes y específicas para avanzar en la participación y la transparencia, y certifica el cumplimiento de las mismas por medio de evaluadores independientes."
+        process_9_button: "Más información"
+        process_10_title: "Ordenanza de subvenciones"
+        process_10_description: "El Ayuntamiento de Madrid sometió a consulta pública la necesidad de modificar la regulación del sistema de subvenciones."
+        process_10_button: "Más información"
+        process_11_title: "Borrador de Plan de Calidad de Aire y Cambio Climático"
+        process_11_description: "Información y comunicación de las medidas propuestas en el borrador del nuevo plan de calidad del aire y cambio climático de la ciudad de Madrid."
+        process_11_button: "Más información"
+        process_12_title: "Consulta pública modificación Ordenanza Reguladora de la denominación y Rotulación de Vías, Espacios Urbanos"
+        process_12_description: "En el año 2007, se aprobó la denominada Ley de Memoria Histórica que tiene por objeto reconocer y ampliar derechos así como establecer medidas en favor de quienes padecieron persecución o violencia durante la guerra civil y la dictadura."
+        process_12_button: "Más información"
+        process_13_title: "Nuevo barrio en el distrito de Villa de Vallecas"
+        process_13_description: 'El Ayuntamiento de Madrid somete a consulta pública la conveniencia de crear un nuevo barrio en el distrito de Villa de Vallecas denominado "Ensanche de Vallecas".'
+        process_13_button: "Más información"
+        process_14_title: "Atención a la ciudadanía de Línea Madrid"
+        process_14_description: 'El Proyecto Línea Madrid se enmarca dentro de uno de los principales objetivos del Ayuntamiento de Madrid como es la mejora continua en la prestación de servicios a la ciudadanía.'
+        process_14_button: "Más información"
+        process_15_title: "Nueva ordenanza de movilidad"
+        process_15_description: "Se pretende abrir un profundo debate en la ciudadanía que permita hallar soluciones eficaces y socialmente consensuadas a los problemas de la movilidad urbana presente y futura."
+        process_15_button: "Más información"
+        process_16_title: "Conservación, Rehabilitación y Estado Ruinoso de las Edificaciones"
+        process_16_description: "El Ayuntamiento de Madrid somete a consulta pública la aprobación de una nueva Ordenanza con el ánimo de proteger más eficazmente la calidad de vida de los ciudadanos en términos de sostenibilidad ambiental y cohesión social y territorial."
+        process_16_button: "Más información"
+        process_17_title: "Modificación de la ordenanza reguladora de la publicidad exterior"
+        process_17_description: "El objetivo de la modificación es conseguir una normativa más clara que facilite su aplicación, clarificando conceptos, ámbitos de aplicación y definiciones, eliminando exigencias innecesarias y referencias a normativas sectoriales."
+        process_17_button: "Más información"
+        process_18_title: "Nuevos barrios en el Distrito de Vicálvaro"
+        process_18_description: "El Ayuntamiento de Madrid somete a consulta pública la conveniencia de crear nuevos barrios en el Distrito de Vicálvaro."
+        process_18_button: "Más información"
+        process_19_title: 'Cambio de denominación  del barrio "San Andrés"'
+        process_19_description: 'El Ayuntamiento de Madrid somete a consulta pública la conveniencia de cambiar la denominación del "Barrio San Andrés" por el de "Villaverde Alto, Casco Histórico de Villaverde", en el Distrito de Villaverde.'
+        process_19_button: "Más información"
+        title: Procesos participativos
+        process_plaza_title: Remodelación de Plaza España
+        process_plaza_description: Selecciona el proyecto que más te guste para este nuevo espacio en tu ciudad.
+        more_info_title: "Ver más información del proceso "
+      process_1:
+        title: Ayúdanos a mejorar la Ordenanza de Transparencia de la Ciudad de Madrid
+        comment: dejar tus comentarios
+        text: |
+          Este es el texto sometido a consulta pública. En breve publicaremos el texto del proyecto inicial de Ordenanza que apruebe la Junta de Gobierno de la Ciudad de Madrid con las aportaciones ciudadanas que se hayan incluido.
+          
+          La Ordenanza regulará la publicidad activa, el derecho de acceso y la reutilización de la información pública, así como el registro de lobbies, desde un principio básico de máxima transparencia y divulgación de la información que genera el Ayuntamiento de Madrid y el resto de los sujetos obligados por la norma.
+          
+          Este texto, en cuya elaboración ha participado un nutrido grupo de representantes de diferentes áreas de gobierno y órganos directivos municipales, surge con la vocación de convertir la transparencia en uno de los ejes inspiradores de la actuación municipal y para lograr devolver la información que genera la Administración a sus verdaderos propietarios, los ciudadanos.
+          
+          El proceso de consulta pública finalizó el 31 de Enero de 2016.
+        button: Ver borrador
+      process_3:
+        view_all: Ver propuestas y preguntas más votadas
+        view_questions: Ver todas las preguntas enviadas
     titles:
-      accessibility: Accessibilité
-      conditions: Conditions d'utilisations
-      more_info: "Plus d'information à propos %{org_name}"
-      privacy: Politique de confidentialité
+      accessibility: Accesibilidad
+      conditions: Condiciones de uso
+      more_info: "Más información sobre %{org_name}"
+      privacy: Política de Privacidad
+      kit_decide: 'Kit Decide: para hacer tus campañas de comunicación después de crear una propuesta'
     verify:
-      code: Code que vous avez reçu par lettre
-      email: Courriel
-      info: "Pour vérifier votre compte saisissez vos données d'accès :"
-      info_code: 'Saisissez maintenant le code reçu par lettre :'
-      password: Mot de passe
-      submit: Confirmer mon compte
-      title: Confirmer mon compte
+      code: Código que has recibido en tu carta
+      email: Email
+      info: 'Para verificar tu cuenta introduce los datos con los que te registraste:'
+      info_code: 'Ahora introduce el código que has recibido en tu carta:'
+      password: Contraseña
+      submit: Verificar mi cuenta
+      title: Verifica tu cuenta
+  annotator:
+    help:
+      alt: Selecciona el texto que quieres comentar y pulsa en el botón con el lápiz.
+      text: Para comentar este documento debes %{sign_in} o %{sign_up}. Después selecciona el texto que quieres comentar y pulsa en el botón con el lápiz.
+      text_sign_in: iniciar sesión
+      text_sign_up: registrarte
+      title: "¿Cómo puedo comentar este documento?"
