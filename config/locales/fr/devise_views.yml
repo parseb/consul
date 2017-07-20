@@ -1,130 +1,129 @@
----
 fr:
   devise_views:
     confirmations:
       new:
-        email_label: Courriel
-        submit: Renvoyer les instructions
-        title: Renvoyer les instructions de confirmation
+        email_label: Email
+        submit: Reenviar instrucciones
+        title: Reenviar instrucciones de confirmación
       show:
-        instructions_html: Confirmer le compte avec le courriel %{email}
-        new_password_confirmation_label: Re-saisissez le mot de passe
-        new_password_label: Nouveau mot de passe
-        please_set_password: Veuillez choisir votre nouveau mot de passe (cela vous permettra de vous connecter en combinaison avec le courriel ci-dessus)
-        submit: Confirmer
-        title: Confirmer mon compte
+        instructions_html: Vamos a proceder a confirmar la cuenta con el email <b>%{email}</b>
+        new_password_confirmation_label: Repite la clave de nuevo
+        new_password_label: Nueva clave de acceso
+        please_set_password: Por favor introduce una nueva clave de acceso para su cuenta (te permitirá hacer login con el email de más arriba)
+        submit: Confirmar
+        title: Confirmar mi cuenta
     mailer:
       confirmation_instructions:
-        confirm_link: Confirmer mon compte
-        text: 'Vous pouvez confirmer votre courriel en cliquant sur le lien suivant :'
-        title: Bienvenue sur le portail Gouvernement Ouvert
-        welcome: Bienvenue
+        confirm_link: Confirmar mi cuenta
+        text: 'Puedes confirmar tu cuenta de correo electrónico en el siguiente enlace:'
+        title: Te damos la bienvenida al Portal de Gobierno Abierto del Ayuntamiento de Madrid
+        welcome: Bienvenido/a
       reset_password_instructions:
-        change_link: Changer mon mot de passe
-        hello: Bonjour
-        ignore_text: Si vous n'avez demander à changer de mot de passe, vous pouvez ignorer ce courriel.
-        info_text: Votre mot de passe ne sera pas changé si vous n'accédez pas au lien pour l'éditer.
-        text: 'Nous avons reçu une demande de changement de votre mot de passe. Vous pouvez le changer sur le lien suivant :'
-        title: Changer votre mot de passe
+        change_link: Cambiar mi contraseña
+        hello: Hola
+        ignore_text: Si tú no lo has solicitado, puedes ignorar este email.
+        info_text: Tu contraseña no cambiará hasta que no accedas al enlace y la modifiques.
+        text: 'Se ha solicitado cambiar tu contraseña, puedes hacerlo en el siguiente enlace:'
+        title: Cambia tu contraseña
       unlock_instructions:
-        hello: Bonjour
-        info_text: Votre compte a été bloqué suite à un nombre excessif de tentatives de connexion erronées.
-        instructions_text: 'Veuillez cliquer sur ce lien pour débloquer votre compte :'
-        title: Votre compte a été bloqué
-        unlock_link: Débloquer mon compte
+        hello: Hola
+        info_text: Tu cuenta ha sido bloqueada debido a un excesivo número de intentos fallidos de alta.
+        instructions_text: 'Sigue el siguiente enlace para desbloquear tu cuenta:'
+        title: Tu cuenta ha sido bloqueada
+        unlock_link: Desbloquear mi cuenta
     menu:
       login_items:
-        login: Se connecter
-        logout: Se déconnecter
-        signup: S'enregistrer
+        login: Entrar
+        logout: Salir
+        signup: Registrarse
     organizations:
       registrations:
         new:
-          email_label: Courriel
-          organization_name_label: Nom de l'organisation
-          password_confirmation_label: Confirmer le mot de passe
-          password_label: Mot de passe
-          phone_number_label: Numéro de téléphone
-          responsible_name_label: Nom complet de la personne responsable de ce collectif
-          responsible_name_note: Il s'agit de la personne représentant l'association/le collectif au nom duquel les propositions sont présentées
-          submit: S'enregistrer
-          title: S'enregistrer en tant qu'organisation ou collectif
+          email_label: Email
+          organization_name_label: Nombre de la organización
+          password_confirmation_label: Confirmar contraseña
+          password_label: Contraseña
+          phone_number_label: Teléfono
+          responsible_name_label: Nombre y apellidos de la persona responsable del colectivo
+          responsible_name_note: Será la persona representante de la asociación/colectivo en cuyo nombre se presenten las propuestas
+          submit: Registrarse
+          title: Registrarse como organización / colectivo
         success:
-          back_to_index: Entendu, revenir à la page principale
-          instructions_1_html: "<b>Nous vous contacterons bientôt</b> pour vérifier que vous représentez bien ce collectif."
-          instructions_2_html: Pendant que votre <b>courriel est en cours de vérification</b>, nous vous avons envoyé un <b>lien pour confirmer votre compte</b>.
-          instructions_3_html: Une fois confirmé, vous pourrez commencer à participer en tant que collectif non vérifié.
-          thank_you_html: Merci d'avoir enregistrer votre collectif sur la plateforme. Il est maintenant <b>en attente de vérification</b>.
-          title: Enregistrement d'une organisation / d'un collectif
+          back_to_index: Entendido, volver a la página principal
+          instructions_1_html: En breve <b>nos pondremos en contacto contigo</b> para verificar que realmente representas a este colectivo.
+          instructions_2_html: Mientras <b>revisa tu correo electrónico</b>, te hemos enviado un <b>enlace para confirmar tu cuenta</b>.
+          instructions_3_html: Una vez confirmado, podrás empezar a participar como colectivo no verificado.
+          thank_you_html: Gracias por registrar tu colectivo en la web. Ahora está <b>pendiente de verificación</b>.
+          title: Registro de organización / colectivo
     passwords:
       edit:
-        change_submit: Changer mon mot de passe
-        password_confirmation_label: Confirmer le nouveau mot de passe
-        password_label: Nouveau mot de passe
-        title: Changer votre mot de passe
+        change_submit: Cambiar mi contraseña
+        password_confirmation_label: Confirmar contraseña nueva
+        password_label: Contraseña nueva
+        title: Cambia tu contraseña
       new:
-        email_label: Courriel
-        send_submit: Envoyer les instructions
-        title: Mot de passe oublié ?
+        email_label: Email
+        send_submit: Recibir instrucciones
+        title: "¿Has olvidado tu contraseña?"
     sessions:
       new:
-        email_label: Courriel
-        password_label: Mot de passe
-        remember_me: Se rappeler de moi
-        submit: Entrer
-        title: Se connecter
+        login_label: Email o nombre de usuario
+        password_label: Contraseña
+        remember_me: Recordarme
+        submit: Entrar
+        title: Entrar
     shared:
       links:
-        login: Entrer
-        new_confirmation: Vous n'avez pas reçu les instructions pour activer votre compte ?
-        new_password: Vous avez oublié votre mot de passe ?
-        new_unlock: Vous n'avez pas reçu les instructions pour débloquer votre compte?
-        signin_with_provider: Se connecter avec %{provider}
-        signup: Vous n'avez pas encore de compte ? %{signup_link}
-        signup_link: S'enregistrer
+        login: Entrar
+        new_confirmation: "¿No has recibido instrucciones para confirmar tu cuenta?"
+        new_password: "¿Olvidaste tu contraseña?"
+        new_unlock: "¿No has recibido instrucciones para desbloquear?"
+        signin_with_provider: Entrar con %{provider}
+        signup: "¿No tienes una cuenta? %{signup_link}"
+        signup_link: Regístrate
     unlocks:
       new:
-        email_label: Courriel
-        submit: Renvoyer les instructions de déblocage
-        title: Renvoyer les instructions de déblocage
+        email_label: Email
+        submit: Reenviar instrucciones para desbloquear
+        title: Reenviar instrucciones para desbloquear
     users:
       registrations:
         delete_form:
-          erase_reason_label: Motif de la suppression
-          info: Cette action ne peut pas être annulée. Une fois que votre compte est supprimé, vous ne pourrez plus l'utiliser pour vous connecter.
-          info_reason: Si vous le souhaitez, indiquer le motif de la suppression de votre compte (optionnel)
-          submit: Supprimer mon compte
-          title: Supprimer un compte
+          erase_reason_label: Razón de la baja
+          info: Esta acción no se puede deshacer. Una vez que des de baja tu cuenta, no podrás volver a hacer login con ella.
+          info_reason: Si quieres, escribe el motivo por el que te das de baja (opcional).
+          submit: Borrar mi cuenta
+          title: Darme de baja
         edit:
-          current_password_label: Mot de passe actuel
-          edit: Éditer
-          email_label: Courriel
-          leave_blank: Laissez vide si vous ne souhaitez pas le modifier
-          need_current: Nous avons besoin de votre mot de passe actuel pour confirmer les modifications
-          password_confirmation_label: Confirmer le nouveau mot de passe
-          password_label: Nouveau mot de passe
-          update_submit: Mettre-à-jour
-          waiting_for: 'En attente de la confirmation de:'
+          current_password_label: Contraseña actual
+          edit: Editar
+          email_label: Email
+          leave_blank: Dejar en blanco si no deseas cambiarla
+          need_current: Necesitamos tu contraseña actual para confirmar los cambios
+          password_confirmation_label: Confirmar contraseña nueva
+          password_label: Contraseña nueva
+          update_submit: Actualizar
+          waiting_for: 'Esperando confirmación de:'
         new:
-          cancel: Annuler la connexion
-          email_label: Courriel
-          organization_signup: Représentez-vous une organisation ou un collectif? %{signup_link}
-          organization_signup_link: Enregistrez-vous ici
-          password_confirmation_label: Confirmer le mot de passe
-          password_label: Mot de passe
-          redeemable_code: Code de vérification reçu par courriel (optionnel)
-          submit: S'enregistrer
-          terms: En vous enregistrant, vous acceptez les %{terms}
-          terms_link: Conditions d'utilisation
-          terms_title: En vous enregistrant, vous acceptez les conditions d'utilisation.
-          title: S'enregistrer
-          username_is_available: "Nom d'utilisateur disponible"
-          username_is_not_available: "Nom d'utilisateur déjà utilisé"
-          username_label: Nom d'utilisateur
-          username_note: Nom qui apparaîtra en face de vos publications
+          cancel: Cancelar login
+          email_label: Tu correo electrónico
+          organization_signup: "¿Representas a una organización / colectivo? %{signup_link}"
+          organization_signup_link: Regístrate aquí
+          password_confirmation_label: Repite la contraseña anterior
+          password_label: Contraseña que utilizarás para acceder a este sitio web
+          redeemable_code: Tu código de verificación (si has recibido una carta con él)
+          submit: Registrarse
+          terms: Al registrarte aceptas las %{terms}
+          terms_link: condiciones de uso
+          terms_title: Al registrarte aceptas las condiciones de uso
+          title: Registrarse
+          username_is_available: "Nombre de usuario disponible"
+          username_is_not_available: "Nombre de usuario ya existente"
+          username_label: Nombre de usuario
+          username_note: Nombre público que aparecerá en tus publicaciones
         success:
-          back_to_index: Entendu, revenir à la page principale
-          instructions_1_html: Veuillez <b>vérifier votre adresse</b> - nous vous avons envoyé un <b>lien pour confirmer votre compte</b>.
-          instructions_2_html: Une fois confirmé, vous pourrez commencer à participer.
-          thank_you_html: Merci de vous être enregistré sur la plateforme. Vous devez maintenant <b>confirmer votre adresse</b>.
-          title: Modifier votre courriel
+          back_to_index: Entendido, volver a la página principal
+          instructions_1_html: Por favor <b>revisa tu correo electrónico</b> - te hemos enviado un <b>enlace para confirmar tu cuenta</b>.
+          instructions_2_html: Una vez confirmado, podrás empezar a participar.
+          thank_you_html: Gracias por registrarte en la web. Ahora debes <b>confirmar tu correo</b>.
+          title: Revisa tu correo
